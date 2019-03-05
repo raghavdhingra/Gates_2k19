@@ -1,0 +1,143 @@
+@font-face {
+    font-family: Gotham_Bold;
+    src: url(../assets/fonts/GothamBold.otf);
+}
+@font-face {
+    font-family: Gotham_Light;
+    src: url(../assets/fonts/GothamLight.otf);
+}
+body{
+    background-image: url(../assets/images/gates_web_background.png);
+    background-size: cover;                     
+    background-repeat: no-repeat;
+    background-position: center center;    
+}
+.flex_EventContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.ChildContainer{
+    width:100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.TechEvent,.CulturalEvent,.Man_LibEvent,.Misc{
+    position: relative;
+    bottom: -50px;
+    width: 240px;
+    height: 60%;
+    background-color: aqua;
+    border-radius: 17px;
+    margin: 22px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.Event_img{
+    position: relative;
+    top:-80px;
+    width: 120%;
+    height: 100%;
+}
+.Event_img_Manage{
+    position: relative;
+    top:-2px;
+    left:-55px;
+    width: 210%;
+    height: 80%;
+}
+.Event_img_Misc{
+    position: relative;
+    top:-2px;
+    left:-100px;
+    width: 210%;
+    height: 80%;
+}
+.Gradient_TechEvent{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    background: rgb(53,51,134);
+    background: linear-gradient(0deg, rgba(53,51,134,1) 35%, rgba(53,51,134,0) 81%);
+    width: 100%;
+    height: 80%;
+}
+.Gradient_Cultural{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    background: rgb(246,99,128);
+background: linear-gradient(0deg, rgba(246,99,128,1) 35%, rgba(53,51,134,0) 81%);
+    width: 100%;
+    height: 80%;
+}
+.Gradient_LibEvent{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    background: rgb(245,51,51);
+background: linear-gradient(0deg, rgba(245,51,51,1) 35%, rgba(53,51,134,0) 81%);
+    width: 100%;
+    height: 80%;
+}
+.Gradient_Misc{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    background: rgb(0,183,197);
+background: linear-gradient(0deg, rgba(0,183,197,1) 35%, rgba(53,51,134,0) 81%);
+    width: 100%;
+    height: 80%;
+}
+h2{
+    position: relative;
+    font-family:Gotham_Bold;
+    color: white;
+    top:260px;
+    padding-left: 22px;
+}
+h3{
+    position: relative;
+    font-family:Gotham_Light;
+    color: white;
+    top:240px;
+    font-size: 22px;
+    padding-left: 22px;
+    font-weight: lighter;
+}
+.Main_Nav{
+    position: absolute;
+    top:0;
+    left:0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 90px;
+}
+.Brand_Logo{
+    padding-top: 45px;
+    width: 20%;
+    height: 90%;
+    padding-left: 180px;
+}
+.navbar_element{
+    padding-left: 240px;
+    font-family: Gotham_Light;
+    text-transform: capitalize;
+    font-size: 35px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 80px;
+}
+.elmt{
+    margin-left: 40px;
+    cursor: pointer;
+}
+.down{
+    position: relative;
+    top: -50px;
+}
