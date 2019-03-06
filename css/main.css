@@ -6,11 +6,15 @@
     font-family: Gotham_Light;
     src: url(../assets/fonts/GothamLight.otf);
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-image: url(../assets/images/gates_web_background.png);
     background-size: cover;                     
     background-repeat: no-repeat;
-    background-position: center center;    
+    background-position: center center;
+    background-attachment: fixed;
 }
 .flex_EventContainer{
     display: flex;
@@ -60,38 +64,66 @@ body{
 .Gradient_TechEvent{
     position: absolute;
     bottom: 0;
+    color: white;
     z-index: 1;
     background: rgb(53,51,134);
     background: linear-gradient(0deg, rgba(53,51,134,1) 35%, rgba(53,51,134,0) 81%);
     width: 100%;
     height: 80%;
+    transition: 0.5s;
+}
+.TechEvent:hover .Gradient_TechEvent{
+    height: 155%;
+    background: rgba(53,51,134,0);
+    background: linear-gradient(0deg, rgba(53,51,134,1) 35%, rgba(53,51,134,0) 100%);
 }
 .Gradient_Cultural{
     position: absolute;
     bottom: 0;
     z-index: 1;
     background: rgb(246,99,128);
-background: linear-gradient(0deg, rgba(246,99,128,1) 35%, rgba(53,51,134,0) 81%);
+    background: linear-gradient(0deg, rgba(246,99,128,1) 35%, rgba(53,51,134,0) 81%);
     width: 100%;
+    transition: 0.5s;
     height: 80%;
+}
+
+.CulturalEvent:hover .Gradient_Cultural{
+    height: 155%;
+    background: rgb(246,99,128);
+    background: linear-gradient(0deg, rgba(246,99,128,1) 35%, rgba(53,51,134,0) 81%);
 }
 .Gradient_LibEvent{
     position: absolute;
     bottom: 0;
+    transition: 0.5s;
     z-index: 1;
     background: rgb(245,51,51);
-background: linear-gradient(0deg, rgba(245,51,51,1) 35%, rgba(53,51,134,0) 81%);
+    background: linear-gradient(0deg, rgba(245,51,51,1) 35%, rgba(53,51,134,0) 81%);
     width: 100%;
     height: 80%;
+}
+
+.Man_LibEvent:hover .Gradient_LibEvent{
+    height: 155%;
+    background: rgb(245,51,51);
+    background: linear-gradient(0deg, rgba(245,51,51,1) 35%, rgba(53,51,134,0) 81%);
 }
 .Gradient_Misc{
     position: absolute;
     bottom: 0;
     z-index: 1;
     background: rgb(0,183,197);
-background: linear-gradient(0deg, rgba(0,183,197,1) 35%, rgba(53,51,134,0) 81%);
+    background: linear-gradient(0deg, rgba(0,183,197,1) 35%, rgba(53,51,134,0) 81%);
     width: 100%;
     height: 80%;
+    transition: 0.5s;
+}
+
+.Misc:hover .Gradient_Misc{
+    height: 155%;
+    background: rgb(0,183,197);
+    background: linear-gradient(0deg, rgba(0,183,197,1) 35%, rgba(53,51,134,0) 81%);
 }
 h2{
     position: relative;
@@ -136,6 +168,26 @@ h3{
 .elmt{
     margin-left: 40px;
     cursor: pointer;
+}
+h4{
+    position: relative;
+    font-family:Gotham_Light;
+    color: white;
+    top:240px;
+    font-size: 20px;
+    padding-left: 22px;
+    font-weight: lighter;
+}
+.elmt::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1.5px;
+    background: #333;
+    transition: width .3s;
+}
+.elmt:hover::after {
+    width: 100%;
 }
 .down{
     position: relative;
