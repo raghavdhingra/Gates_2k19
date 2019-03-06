@@ -212,4 +212,22 @@ h4{
         overflow: hidden;
         cursor: pointer;
     }
+    h4{
+        top: 200px;
+    }
+    .navbar_element{
+        font-size: 25px;
+        padding-left: 30%;
+    }
+    .Brand_Logo{
+        padding-top: 35px;
+        width: 20%;
+        height: 90%;
+        padding-left: 50px;
+    }
+}
+@media (max-width:1050px){
+    .navbar_element{
+        padding-left: 20%;
+    }
 }
