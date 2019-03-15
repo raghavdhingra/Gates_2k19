@@ -2,16 +2,16 @@
     {
         "name":"Hack and Crack",
         "data":"ipsum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam reprehenderit non facere pariatur, enim nostrum recusandae iure minima eos odio",
-        "link":""
+        "link":"#"
     },
     {
         "name":"Something",
         "data":"kk Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam reprehenderit non facere pariatur, enim nostrum recusandae iure minima eos odio",
-        "link":""
+        "link":"http://www.google.com"
     },
     {
         "name":"again",
         "data":"lol Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam reprehenderit non facere pariatur, enim nostrum recusandae iure minima eos odio",
-        "link":""
+        "link":"nothing"
     }
 ]
