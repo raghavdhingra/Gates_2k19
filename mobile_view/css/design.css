@@ -1,0 +1,212 @@
+@import url("https://use.fontawesome.com/releases/v5.7.2/css/all.css");
+@font-face {
+  font-family: Gotham_Bold;
+  src: url(../assets/fonts/GothamBold.otf);
+}
+@font-face {
+  font-family: Gotham_Light;
+  src: url(../assets/fonts/GothamLight.otf);
+}
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body{
+  margin: 0;
+  background-image: url("./img/gates_web_background.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: verdana;
+}
+     
+.up_icon{
+  position: fixed;
+  border-radius: 50%;
+  border: 2px solid #333;
+  color: rgb(121, 121, 121);
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom:1px;
+  font-size: 35px;
+  bottom: 3%;
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 0;
+  z-index: -1;
+  right: 3%;
+}
+.up_icon:hover{
+  color: rgb(231, 228, 228);
+  border-color: #aaa;
+}
+footer{
+  background-color: black;
+  color: #ccc;
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+a i {
+  color: #888;
+}
+a i:hover{
+color:#ccc;
+}
+/*--sidenav--*/
+.sidenav-btn {
+  width: 5%;
+  height: auto;
+  display: block;
+  position: fixed;
+  z-index: 11;
+  top: 35%;
+  left: 0;
+  text-align: center;
+  background: #f43c62;
+  color:white;
+  overflow-x: hidden;
+  padding: 3% 1%;
+  cursor: pointer;
+  border-radius: 0 10px 10px 0;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 11;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+}
+.events{
+  font-size: 30px;
+  color: #333;
+  margin-left: 150px;
+}
+.card > .events{
+  margin-left:0;
+}
+.events::after{
+  display: block;
+  content: "";
+  height: 3px;
+  width: 80px;
+  background: #333;
+}
+.side_nav_elmt{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  font-size: 40px;
+  transform: translate(-50%,-50%);
+}
+
+div span i{
+  font-size:10px;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  color: #ccc;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+}
+.open_side_nav{
+  top: 0;
+  right: 0;
+  position: fixed;
+  overflow: hidden;
+  z-index: 11;
+  transition: 0.3s;
+  border-radius: 10px 0 0 10px;
+  height: 100%;
+  width: 0;
+  background: rgba(231, 231, 231, 0.95);
+}
+.right_nav_elmt_column{
+  color:rgb(94, 94, 94);
+  font-family: Gotham_Bold;
+  font-size: 30px;
+  text-transform: capitalize;
+  margin-top: 100px;
+  text-align: center;
+}
+.right_nav_elmt{
+  transition: 0.3s;
+  cursor: pointer;
+  border-bottom: 2px solid rgb(122, 122, 122);
+  padding-bottom:10px;
+  margin:10px;
+}
+.right_nav_elmt:hover{
+  color: rgb(0, 0, 0);
+}
+.right_nav_elmt:last-child{
+  border:none;
+}
+
+
+.images{
+  float: right;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+h1{
+
+  display: inline-block;
+  position: relative;
+  background: none;
+  border: none;
+}
+
+.logo {
+  margin: 3%;
+  color: white;
+  position: fixed;
+  width: 20%;
+  float: left;
+}
+
+.card{
+  width: 100%;
+  min-height: 70%;
+  max-height: auto;
+  overflow: auto;
+}
+
+/*--arrow--*/
+#arrow{
+  margin-left: 50%;
+  display: block;
+  width: 25px;
+  bottom: 50px;
+  position: fixed;
+}
+
+#up-arrow{
+  display: none;
+  width: 25px;
+  bottom: 50px;
+  right: 50px;
+  float: right;
+  position: fixed;
+  z-index: 2;
+}
