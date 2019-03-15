@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GATES || GTBIT</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="./css/design.css">
+<body>
+
+		<a href="#above"><div class="up_icon" id="up_icon">
+				<i class="fas fa-chevron-circle-up"></i>
+		</div></a>
+
+
+
+<!----MOBILE NAV BAR-------------------------->
+		<div class="mobile_nav">
+      <div style="margin-top: 5px;">
+				<img src="../assets/images/web_logo.png" height="50px;" style="margin-left:5px;"/>
+				<div style="float:right;margin-top: 10px;margin-right: 15px;cursor:pointer;">
+					<i class="fas fa-bars" id="open_nav"></i>
+				</div>
+			</div>
+		</div>
+		<div class="open_side_nav" id="open_side_nav">
+				<div style="float: right;margin:10px;color: rgb(49, 49, 49);font-size: 40px;cursor: pointer;" id="close_nav">&times;</div>
+				<div class="right_nav_elmt_column">
+						<div class="right_nav_elmt" onclick="close_it();"><a href="#flashback">Flashback</a></div>
+						<div class="right_nav_elmt" onclick="close_it();"><a href="#about">about</a></div>
+						<div class="right_nav_elmt" onclick="close_it();"><a href="#sponsorships">contact</a></div>
+						<div class="right_nav_elmt" onclick="close_it();"><a href="#sponsorships">sponsorship</a></div>
+				</div>
+		</div>
+<!-------------------------------------------->
+
+
+
+<div class="sidenav-btn" id="sidenav-btn" onclick="openNav()">
+	<span style="font-weight: bold;font-family: Gotham_Bold">S<br>T<br>A<br>R<br><br><i class="far fa-star"></i><br><br>N<br>I<br>G<br>H<br>T</span>
+</div>
+<div id="mySidenav" class="sidenav">
+	<div class="side_nav_elmt">
+		Coming Soon...
+	</div>
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+</div>
+<div id="above"><br></div>
+<div class="card" style="padding-top: 10%;margin-top: 40px;" id="home">
+	<center>
+		<iframe src="https://www.youtube.com/embed/VBK5Dl-nFWU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</center>
+</div>
+
+<div class="card" style="padding:10% 0%;" id="events">
+	<h1 class="events" style="margin-left: 30px;">EVENTS</h1>
+	<center>
+	<div class="img_container">
+	<img onclick="on1()" class="img_events" src="../assets/images/tech.jpg">	
+	<img onclick="on2()" class="img_events" src="../assets/images/cultural_mob.jpg">	
+	<img onclick="on3()" class="img_events" src="../assets/images/literary.jpg">
+	<img onclick="on4()" class="img_events" src="../assets/images/misc_mob.jpg">
+	</div>	
+	</center>
+</div>
+
+<div id="flashback"><br><br></div>
+<div class="card" style="padding:10% 0%;background-color: black;">
+	<h1 class="events" style="color:#fff;margin-left:20px;margin-top: -20px;">Flashback</h1>
+	<div class="img_container">
+		<center>
+		<img class="mySlides animate-fade" src="../assets/images/gurdas-maan.png">
+		<img class="mySlides animate-fade" src="../assets/images/mankirat-dilpreet.png">
+		<img class="mySlides animate-fade" src="../assets/images/diljit-sharry.png">
+		<img class="mySlides animate-fade" src="../assets/images/others.png">
+		</center>
+	</div>
+</div>
+
+</body>
+</html>
