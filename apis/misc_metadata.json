@@ -1,17 +1,37 @@
 [
     {
-        "name":"IOSD",
-        "heading":"something",
-        "data":"ipsum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam reprehenderit non facere pariatur, enim nostrum recusandae iure minima eos odio",
-        "link":""
+        "name":"GAME OF TRUST",
+        "data":"This is a fun-filled event to test your trust and co-ordination with your friends. It will be played with a team of 4 players. It consists of two round and the one who performsthe tasks in the least time will subsequently win in each round.",
+        "link":"https://goo.gl/forms/4chkge7W8y3tcK322"
     },
     {
-        "name":"IOSD",
-        "heading":"something",
-        "data":"ipsum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam reprehenderit non facere pariatur, enim nostrum recusandae iure minima eos odio",
-        "link":""
+        "name":"INTROSPECTION",
+        "data":"This event examines your acting and expressive skills. Your win in this game is defined by how well you can explain your thoughts and views.",
+        "link":"https://goo.gl/forms/TzB4e947ybcJvEyF2"
     },
     {
-        
+        "name":"SELFIE TO FAME",
+        "data":"We all love selfies, right?<br>What would be better than an event based on selfie?<br>This is one event that has something for everybody, even if you have absolutely no talent. It will be much enjoyed by the audience as well.<br>The teams will be judged on how much buzz theyy have created.",
+        "link":"https://goo.gl/forms/WZulnsOA6EnYexzj1"
+    },
+    {
+        "name":"SOCIONEETI",
+        "data":"The concept behind the game is to examine participant's confidence, knowledge and interest in politics. This socio-neeti have two rounds. The one who presents himself in best way will subsequently win the round.",
+        "link":"https://goo.gl/forms/fMU9CL6QPG4Fdb7v2"
+    },
+    {
+        "name":"FANDOMIZE",
+        "data":"Showcase your inner geek and test your knowlegde in the field of Pop Culture and showcase the Millennial and Gen-z in you.",
+        "link":"https://goo.gl/forms/WYrxz7I2wRF9c3rq2"
+    },
+    {
+        "name":"THE E CHALLENGE",
+        "data":"This event focus on business and enterpreneurship skills of students.Despite being a fun game, it also provides students with an experience of the happening world of operations through a simulated environment.",
+        "link":"https://goo.gl/forms/5fRQodBriiKR37yF3"
+    },
+    {
+        "name":"MAFIA",
+        "data":"It's time for the crime lovers to buckle up their belts because this game is all about murders. Get ready to go on a thrilling ride with us in this next game.<br>The players try to deduce identities of each other through debates and corner the killers. The game is stopped when either the killers are caught or if the the number of citizens is less then number of killers left.",
+        "link":"https://goo.gl/forms/6ahLoyKMtyKsYTfy1"
     }
 ]
