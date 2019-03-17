@@ -246,3 +246,136 @@ backward_2.addEventListener("click",()=>{
 
 
 
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+// Defining different IDs
+//request_3
+
+
+const heading_3 = document.getElementById("event_heading_3");
+const detail_3 = document.getElementById("event_detail_3");
+const btn_3 = document.getElementById("register_btn_3");
+const forward_3 = document.getElementById("forward_btn_3");
+const backward_3 = document.getElementById("backward_btn_3");
+var arr3 = 0, arr_num_3 = 0;
+
+
+const request_3 = new XMLHttpRequest();
+request_3.open('GET','https://raw.githubusercontent.com/raghavdhingra/Gates_2k19/master/apis/manage_metadata.json');
+
+const managementevent = () => {
+  arr3 = JSON.parse(request_3.responseText);
+  heading_3.innerHTML = arr3[arr_num_3].name;
+  detail_3.innerHTML = arr3[arr_num_3].data;
+  btn_3.href = arr3[arr_num_3].link;
+  document.body.style.overflowY="hidden";
+  document.getElementById("iframe_3").style.zIndex='11';
+  document.getElementById("iframe_3").style.opacity='1';
+  document.getElementById("total_event_3").innerText=JSON.parse(request_3.responseText).length;
+}
+
+forward_3.addEventListener("click",()=>{
+  arr3 = JSON.parse(request_3.responseText);
+  if (arr_num_3 === arr3.length-1){
+      arr_num_3 = 0;
+      heading_3.innerHTML = arr3[arr_num_3].name;
+      detail_3.innerHTML = arr3[arr_num_3].data;
+      btn_3.href = arr3[arr_num_3].link;
+  }
+  else{
+      arr_num_3+=1;
+      heading_3.innerHTML = arr3[arr_num_3].name;
+      detail_3.innerHTML = arr3[arr_num_3].data;
+      btn_3.href = arr3[arr_num_3].link;
+  }
+  document.getElementById("current_event_3").innerText=arr_num_3+1;
+});
+backward_3.addEventListener("click",()=>{
+  arr3 = JSON.parse(request_3.responseText);
+  if (arr_num_3 === 0){
+      arr_num_3 = arr3.length - 1;
+      heading_3.innerHTML = arr3[arr_num_3].name;
+      detail_3.innerHTML = arr3[arr_num_3].data;
+      btn_3.href = arr3[arr_num_3].link;
+  }
+  else {
+      arr_num_3-=1;
+      heading_3.innerHTML = arr3[arr_num_3].name;
+      detail_3.innerHTML = arr3[arr_num_3].data;
+      btn_3.href = arr3[arr_num_3].link;
+  }
+  document.getElementById("current_event_3").innerText=arr_num_3+1;
+});
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+// Defining different IDs
+//Request_4
+
+
+const heading_4 = document.getElementById("event_heading_4");
+const detail_4 = document.getElementById("event_detail_4");
+const btn_4 = document.getElementById("register_btn_4");
+const forward_4 = document.getElementById("forward_btn_4");
+const backward_4 = document.getElementById("backward_btn_4");
+var arr4 = 0, arr_num_4 = 0;
+
+
+const request_4 = new XMLHttpRequest();
+request_4.open('GET','https://raw.githubusercontent.com/raghavdhingra/Gates_2k19/master/apis/culture_metadata.json');
+
+const culturalevent = () => {
+  arr4 = JSON.parse(request_4.responseText);
+  heading_4.innerHTML = arr4[arr_num_4].name;
+  detail_4.innerHTML = arr4[arr_num_4].data;
+  btn_4.href = arr4[arr_num_4].link;
+  document.body.style.overflowY="hidden";
+  document.getElementById("iframe_4").style.zIndex='11';
+  document.getElementById("iframe_4").style.opacity='1';
+  document.getElementById("total_event_4").innerText=JSON.parse(request_4.responseText).length;
+}
+
+forward_4.addEventListener("click",()=>{
+  arr4 = JSON.parse(request_4.responseText);
+  if (arr_num_4 === arr4.length-1){
+      arr_num_4 = 0;
+      heading_4.innerHTML = arr4[arr_num_4].name;
+      detail_4.innerHTML = arr4[arr_num_4].data;
+      btn_4.href = arr4[arr_num_4].link;
+  }
+  else{
+      arr_num_4+=1;
+      heading_4.innerHTML = arr4[arr_num_4].name;
+      detail_4.innerHTML = arr4[arr_num_4].data;
+      btn_4.href = arr4[arr_num_4].link;
+  }
+  document.getElementById("current_event_4").innerText=arr_num_4+1;
+});
+backward_4.addEventListener("click",()=>{
+  arr4 = JSON.parse(request_4.responseText);
+  if (arr_num_4 === 0){
+      arr_num_4 = arr4.length - 1;
+      heading_4.innerHTML = arr4[arr_num_4].name;
+      detail_4.innerHTML = arr4[arr_num_4].data;
+      btn_4.href = arr4[arr_num_4].link;
+  }
+  else {
+      arr_num_4-=1;
+      heading_4.innerHTML = arr4[arr_num_4].name;
+      detail_4.innerHTML = arr4[arr_num_4].data;
+      btn_4.href = arr4[arr_num_4].link;
+  }
+  document.getElementById("current_event_4").innerText=arr_num_4+1;
+});
+
+
+request_2.send();
+
+request_1.send();
+request_3.send();
+request_4.send();
