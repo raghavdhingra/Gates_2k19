@@ -1,0 +1,133 @@
+.header{
+    margin: 10px;
+}
+.header_logo{
+    height: 50px;
+}
+.event_close_btn{
+    position: relative;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    top: -35px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.event_close_btn:hover{
+    color: #aaa;
+}
+.event_tab{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-top: 2.5%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 2.5%;
+}
+.event_tab_left{
+    position: relative;
+    height: 95%;
+    float: left;
+}
+.event_tab_left img{
+    position: relative;
+    border-radius: 5px;
+}
+.event_tab_inner{
+    margin-left:40px;
+    margin-right: 40px;
+    display: grid;
+    grid-template-rows: 1fr 0.75fr 7fr 0.8fr;
+}
+.event_heading{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Gotham_Bold;
+    text-transform: capitalize;
+}
+.event_heading::after{
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100px;
+    background: rgba(0,132,118,1);
+}
+.register_btn{
+    position: absolute;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 5px;
+    width: 200px;
+    cursor: pointer;
+    background: rgb(0,132,118);
+    color: #ffffff;
+    text-transform: capitalize;
+    font-family: Gotham_Bold;
+}
+.api_btn{
+    display: inline-block;
+    color: rgb(0,132,118);
+    font-size: 50px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.api_btn:hover{
+    color: rgb(0, 241, 217)
+}
+
+.api_btn_counter{
+    display: inline-block;
+    color:#333;
+    font-size: 25px;
+}
+
+.iframe{
+    position: absolute;
+    background: #fff;
+    top: 0;
+    font-family: Gotham_Light;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+}
+#event_heading_2::after{
+    background: rgb(64,0,87);
+}
+#tech_register_btn{
+    background: rgb(64,0,87);
+}
+#backward_btn_2,#forward_btn_2{
+    color: rgb(64,0,87);
+}
+
+#event_heading_4::after{
+    background: rgb(218,37,68);
+}
+#culture_register_btn{
+    background: rgb(218,37,68);
+}
+#backward_btn_4,#forward_btn_4{
+    color: rgb(218,37,68);
+}
+
+#event_heading_3::after{
+    background: rgb(253,1,0);
+}
+#manage_register_btn{
+    background: rgb(253,1,0);
+}
+#backward_btn_3,#forward_btn_3{
+    color: rgb(253,1,0);
+}
+
+.fa-arrow-alt-circle-left{
+    font-size: 40px;
+  }
+  .fa-arrow-alt-circle-right{
+    font-size: 40px;
+  }
