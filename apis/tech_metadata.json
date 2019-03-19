@@ -1,17 +1,27 @@
 [
     {
-        "name":"IOSD",
-        "heading":"something",
-        "data":"ipsum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam reprehenderit non facere pariatur, enim nostrum recusandae iure minima eos odio",
-        "link":""
+        "name":"Blind Coding",
+        "data":"The participants will be given simple coding tasks which they have to crack but without seeing the code that they have written as the monitor would be switched off",
+        "link":"https://goo.gl/forms/nj3wRdtwWs3tyc3p1"
     },
     {
-        "name":"IOSD",
-        "heading":"something",
-        "data":"ipsum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam reprehenderit non facere pariatur, enim nostrum recusandae iure minima eos odio",
-        "link":""
+        "name":"WEB WAR",
+        "data":"HelloWorld, GTBIT calls out to the web developers, beginners or champs to show their talent of knowledge about Web-Technologies and in round 2, create a website on given theme at our open to all Web war.",
+        "link":"https://goo.gl/forms/mg7y8cLAXYJALqof2"
     },
     {
-        
+        "name":"MEME IT",
+        "data":"At Meme-it!, There are two stages to the competition- one is a scavenger hunt, which would involve the object to which the participants would be making the meme. The second stage- applying your humour and meme making skills to your best of course! You can draw or use graphics designing tools for the same (bring your own laptops)",
+        "link":"https://goo.gl/forms/wXPcUtZUZo0xYPZB2"
+    },
+    {
+        "name":"PENTATHLON",
+        "data":"Event marks the testing of logical and the time managing instincts of the participant. It comprises of five levels to test the ability of the participant in every way possible. Not just this, the key to win this competition would be team work as well. Well it brings along goodies as well!",
+        "link":"https://goo.gl/forms/7xGXrgul7nseH4Z52"
+    },
+    {
+        "name":"Geeky Music Contest",
+        "data":"Being a geek/ software developer is not easy but telling people about your problems in music/ rap / jingles is something to go on... The event brings the nerds and geeks an opportunity to leave aside the software and code and come out to the mic to express problems of being a nerd via music. ",
+        "link": "https://goo.gl/forms/kfKmasDbr0ROVkw23"
     }
 ]
