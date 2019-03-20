@@ -1,4 +1,4 @@
-[
+[    
     {
         "name":"WEB WAR",
         "data":"HelloWorld, GTBIT calls out to the web developers, beginners or champs to show their talent of knowledge about Web-Technologies and in round 2, create a website on given theme at our open to all Web war.",
@@ -50,11 +50,6 @@
         "link":""
     },
     {
-        "name":"SHAZAM-O-MANIA",
-        "data":"A quiz question round based on the basic questions of everyday life.\nTop 10 students will be selected for PENTATHON",
-        "link":""
-    },
-    {
         "name":"CYPHER RUN",
         "data":"All the four participants have to compete with other teams for a relay race competition where you are supposed to dry run your codes and obtain your outputs.\n The output is the key for you to run and transfer your batton to your team member.\n The one who is able to reach the finish line first wins.",
         "link":""
@@ -76,22 +71,12 @@
     },
     {
         "name":"ROBO RACE",
-        "data":"i. Design a manually controlled ROBOT that has capacity to cover maximum distance in shortest possible time, challenging the hurdles and be one of the best opponents. Think your robot can overcome any obstacle-big or small in the least of time. If so get it on the track and let the game begin.\nii. This is racing event so fastest and most balanced robot will win. Robot should be as per the given specifications. Each team can have maximum 4 members.",
+        "data":"(1) Design a manually controlled ROBOT that has capacity to cover maximum distance in shortest possible time, challenging the hurdles and be one of the best opponents. Think your robot can overcome any obstacle-big or small in the least of time. If so get it on the track and let the game begin. \n (2) This is racing event so fastest and most balanced robot will win. Robot should be as per the given specifications. Each team can have maximum 4 members.",
         "link":""
     },
     {
         "name":"LFR (LINE FOLLOWING ROBOT)",
         "data":"i. Design a robot which can trace a path given to it. Path won't be straight,so design your robot intelligently so that it can trace any type of path. The robot which will trace the path in the least time and cover the whole path will be declared as winner.\nii. Robot should be aa per the given specifications. Each team can have maximum 4 members.",
-        "link":""
-    },
-    {
-        "name":"CARNAGE GAMING",
-        "data":"",
-        "link":""
-    },
-    {
-        "name":"SHARK TANK",
-        "data":"",
         "link":""
     },
     {
