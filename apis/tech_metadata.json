@@ -1,28 +1,14 @@
 [
+    
     {
-        "name":"MYSTERY ROOM",
-        "data":"Mystery room is a challenging race against the clock where the sole motive is to get yourself out of a theme based room before time kicks you out! Imagine being locked in a thrill space with your team and you have ecaxt 20 minute for a set of 3 teams at a time to use logic, solve puzzles, find hints and prove the power of teamwork to prave your path to freedom. Its as easy as its hard. Everything you need to escape is inside the room waiting to meet your eyes! Just analyze, interpret and conclude.",
-        "link":""
-    },
-    {
-        "name":"CODE SHUFFLE",
-        "data":"Code shuffle is the test of basic coding skills, it also tests participants analytical and interpretational skills. The participants has to analyze the code before them and arrange them in an order which will make it meaningful and then produce its output. This event will have 4 rounds and the team who completes all the rounds in shotest time will win.",
-        "link":""
-    },
-    {
-        "name":"Xplore the genius within",
-        "data":"Xplore the genius within is the event which will test participants I.Q.. This event contains qustions related to several programming languages and web development.",
-        "link":""
+        "name":"WEB WAR",
+        "data":"HelloWorld, GTBIT calls out to the web developers, beginners or champs to show their talent of knowledge about Web-Technologies and in round 2, create a website on given theme at our open to all Web war.",
+        "link":"https://goo.gl/forms/mg7y8cLAXYJALqof2"
     },
     {
         "name":"Blind Coding",
         "data":"The participants will be given simple coding tasks which they have to crack but without seeing the code that they have written as the monitor would be switched off",
         "link":"https://goo.gl/forms/nj3wRdtwWs3tyc3p1"
-    },
-    {
-        "name":"WEB WAR",
-        "data":"HelloWorld, GTBIT calls out to the web developers, beginners or champs to show their talent of knowledge about Web-Technologies and in round 2, create a website on given theme at our open to all Web war.",
-        "link":"https://goo.gl/forms/mg7y8cLAXYJALqof2"
     },
     {
         "name":"MEME IT",
@@ -38,6 +24,21 @@
         "name":"GEEKY MUSIC CONTEST",
         "data":"Being a geek/ software developer is not easy but telling people about your problems in music/ rap / jingles is something to go on... The event brings the nerds and geeks an opportunity to leave aside the software and code and come out to the mic to express problems of being a nerd via music. ",
         "link":"https://goo.gl/forms/kfKmasDbr0ROVkw23"
+    },
+    {
+        "name":"MYSTERY ROOM",
+        "data":"Mystery room is a challenging race against the clock where the sole motive is to get yourself out of a theme based room before time kicks you out! Imagine being locked in a thrill space with your team and you have ecaxt 20 minute for a set of 3 teams at a time to use logic, solve puzzles, find hints and prove the power of teamwork to prave your path to freedom. Its as easy as its hard. Everything you need to escape is inside the room waiting to meet your eyes! Just analyze, interpret and conclude.",
+        "link":""
+    },
+    {
+        "name":"CODE SHUFFLE",
+        "data":"Code shuffle is the test of basic coding skills, it also tests participants analytical and interpretational skills. The participants has to analyze the code before them and arrange them in an order which will make it meaningful and then produce its output. This event will have 4 rounds and the team who completes all the rounds in shotest time will win.",
+        "link":""
+    },
+    {
+        "name":"Xplore the genius within",
+        "data":"Xplore the genius within is the event which will test participants I.Q.. This event contains qustions related to several programming languages and web development.",
+        "link":""
     },
     {
         "name":"IDEATHON",
