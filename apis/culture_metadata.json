@@ -15,16 +15,6 @@
         "link":"https://docs.google.com/forms/d/e/1FAIpQLSejm88ftBWpw77ilLmWhvyH-GksMv_nxNOY575JKf0yUgAhuw/viewform"
     },
     {
-        "name":"FOOTLOOSE(SOLO WESTERN DANCE)",
-        "data":"Round 1: Online video preliminary\nThe interested participants from various colleges will provide us with their video of this year's production of 2-4 minutes. The selected participants will be participating in the next round.\nRound 2: Main competition\nThe selected participants will be performing in GATES'19. The performances will be of 3-4 mins. The performance will be judged on the basis of criterion decided by the judge.",
-        "link":"https://docs.google.com/forms/d/e/1FAIpQLSc-oliW-z9tvo6w3Rde1y4H-g17H0rM7EodoAjHQ7oBQ0QQYA/viewform"
-    },
-    {
-        "name":"FOOTLOOSE(GROUP WESTERN DANCE)",
-        "data":"Round 1: Online video preliminary\nThe interested teams from various colleges will provide us with the videos of this year's production. The videos will be judged and selected. The selected teams will participate in the next round.\nRound 2: Main Competition\nThe selected teams will be performing in GATES'19. The performances will be of 7-10 mins .The performance will be judged on the basis of criterion decided by the judge.\nTeam Size-6-25 members",
-        "link":"https://docs.google.com/forms/d/e/1FAIpQLScM13S4Cp8LBJ9ft39TZ1Mfu6a8THguF707MsEsnE-UuiGV5w/viewform"
-    },
-    {
         "name":"KRANTI (STREET PLAY)",
         "data":"Different teams of Theatre Circuit will participate and will be performing their street-plays on various social topics to aware people.",
         "link":"https://docs.google.com/forms/d/e/1FAIpQLSdAmNv4Pur0GS0u-3eqNaL3Cen3ErXWflOVFI_fmT5LQ0jkvQ/viewform"
@@ -55,23 +45,33 @@
         "link":"https://docs.google.com/forms/d/1bHoXAgCnC01NmrYz4h4joK4th-rwOY6jbCZopvtpGjo/viewform?edit_requested=true"
     },
     {
-        "name":"STROKE 'N FILL(PAINTING COMPETITION)",
-        "data":"An On The Spot Painting Competition in which the participants will be given a topic and have to paint that in the given time duration.",
-        "link":"https://docs.google.com/forms/d/e/1FAIpQLSe_2dCz5HPTNBh9SRCtj7Vt-MPG43IkdTGWwymZrPIgz7xIwg/viewform?vc=0&c=0&w=1"
-    },
-    {
         "name":"WILD SIDE (GRAFFITI)",
         "data":"The word Graffiti originates from Greek graphein - meaning \"to write\".\"Wild Side\" is a Graffiti competition in which the participants will be given a theme and have to fill a given piece of wall with their imagination.",
         "link":"https://docs.google.com/forms/d/e/1FAIpQLSd0eH1_UIys0sMXT6Q831J_ui-p9RXKnanRcI12sAPrGLhS8g/viewform?vc=0&c=0&w=1"
     },
     {
-        "name":"DOODLE(CARTOONING)",
+        "name":"DOODLE (CARTOONING)",
         "data":"Cartooning is done for entertainment, political commentary, or advertising.\nDoodle is a Cartooning competition in which the participants have to draw a cartoon based on a given theme.",
         "link":"https://docs.google.com/forms/d/e/1FAIpQLSeShgBCPzIPknzIof4eaFhu5J1Vv2dLXZ6MZo9I6A2dO-bfbQ/viewform?vc=0&c=0&w=1"
     },
     {
-        "name":"SCULP-IT(CLAY MODELLING)",
+        "name":"SCULP-IT (CLAY MODELLING)",
         "data":"Sculp-It' is a clay modelling competition in which the participants have to create a clay model on a given theme.",
         "link":"https://docs.google.com/forms/d/e/1FAIpQLSdfA5nbhuu8LK_sCiHYOmlXs-fyhl3oNbTGdF3-QHyRsyXNCA/viewform?vc=0&c=0&w=1"
+    },
+    {
+        "name":"FOOTLOOSE (GROUP WESTERN DANCE)",
+        "data": "Round 1: Online video preliminary\nThe interested teams from various colleges will provide us with the videos of this year's production. The videos will be judged and selected. The selected teams will participate in the next round.\nRound 2: Main Competition\nThe selected teams will be performing in GATES'19. The performances will be of 7-10 mins .The performance will be judged on the basis of criterion decided by the judge.\nTeam Size-6-25 members",
+        "link":"https://docs.google.com/forms/d/e/1FAIpQLScM13S4Cp8LBJ9ft39TZ1Mfu6a8THguF707MsEsnE-UuiGV5w/viewform"
+    },
+    {
+        "name":"FOOTLOOSE (SOLO WESTERN DANCE)",
+        "data":"Round 1: Online video preliminary\nThe interested participants from various colleges will provide us with their video of this year's production of 2-4 minutes. The selected participants will be participating in the next round.\nRound 2: Main competition\nThe selected participants will be performing in GATES'19. The performances will be of 3-4 mins. The performance will be judged on the basis of criterion decided by the judge.",
+        "link":"https://docs.google.com/forms/d/e/1FAIpQLSc-oliW-z9tvo6w3Rde1y4H-g17H0rM7EodoAjHQ7oBQ0QQYA/viewform"
+    },
+    {
+        "name":"STROKE N FILL",
+        "data":"It's a Painting Competition. An On The Spot Painting Competition in which the participants will be given a topic and have to paint that in the given time duration.",
+        "link":"https://docs.google.com/forms/d/e/1FAIpQLSe_2dCz5HPTNBh9SRCtj7Vt-MPG43IkdTGWwymZrPIgz7xIwg/viewform?vc=0&c=0&w=1"
     }
 ]
