@@ -1,38 +1,33 @@
 [
     {
-        "name":"GATKA COMPETITION",
-        "data":"Participants need to show their martial art skills in form of shastar vidya.",
-        "link":""
-    },
-    {
         "name":"NATURE'S SHOT",
         "data":"Competition in which the participants will be given a theme and they have to click photograph of what they interpret from the nature about the topic given to them in the given time duration.",
-        "link":""
+        "link":"https://goo.gl/forms/s1dhzlCTgw8XVILH3"
     },
     {
         "name":"LET'S NOT JUDGE",
         "data":"An event which provides a platform for creative writers who will be given a topic on which they can express their views in any form of writing, may it be poetry or article.",
-        "link":""
+        "link":"https://goo.gl/forms/YSYPDbIrzGamQFGn1"
     },
     {
         "name":"KIRTAN COMPETITION",
         "data":"The event includes solo performance for classical kirtan competition.",
-        "link":""
+        "link":"https://goo.gl/forms/Acke2ye0u7uP0weI2"
     },
     {
         "name":"SINGH VS KAUR",
         "data":"Participants need to showcase their talents and represent their innerself. It will include a talent round, ramp-walk and a questionaire round.",
-        "link":""
+        "link":"https://goo.gl/forms/Fv0ddZRparwGxA772"
     },
     {
-        "name":"GATKA AND DHADI COMPETITION",
+        "name":"GATKA AND DHADI",
         "data":"Divine circle students will perform gatka and dhadi (religious musical performance).",
         "link":""
     },
     {
         "name":"GYAN BODH",
         "data":"A competitive quiz with multiple rounds based on gurmat. Combination of modern sikh life with early sikh heritage.",
-        "link":""
+        "link":"https://goo.gl/forms/K48W5avHwkUUIjjv2"
     },
     {
         "name":"FASHION WALK",
@@ -40,8 +35,13 @@
         "link":""
     },
     {
-        "name":"EXHIBITION",
-        "data":"Dispaly of creativity through any kind of art, it can include paintings, poetry, sketches or photographs. ",
+        "name":"GATKA COMPETITION",
+        "data":"Participants need to show their martial art skills in form of shastar vidya.",
         "link":""
+    },
+    {
+        "name":"EK NOOR (EXHIBITION)",
+        "data":"Dispaly of creativity through any kind of art, it can include paintings, poetry, sketches or photographs. ",
+        "link":"https://goo.gl/forms/5QU7WeRr8mfBvSYm2"
     }
 ]
