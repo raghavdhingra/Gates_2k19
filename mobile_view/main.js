@@ -3,10 +3,10 @@ const close_nav = document.getElementById("close_nav");
 open_nav.addEventListener("click",()=>{
   document.getElementById("open_side_nav").style.width="270px";
 });
-const close_it = () => {
+
+close_nav.addEventListener("click",()=>{
   document.getElementById("open_side_nav").style.width=0;
-}
-close_nav.addEventListener("click",close_it);
+});
 
 
 /*fading effect*/
@@ -50,4 +50,48 @@ function openNav() {
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
+}
+
+
+/////////////////////////////////////////
+const event_img = document.getElementById("event_images");
+var event_btn_counter = 1;
+const prev_event_btn = () => {
+  if (event_btn_counter == 1){
+    event_btn_counter = 5;
+  }
+  else {
+    event_btn_counter--;
+  }
+  event_checker();
+}
+const next_event_btn = () => {
+  if (event_btn_counter == 5){
+    event_btn_counter = 1;
+  }
+  else {
+    event_btn_counter++;
+  }
+  event_checker();
+}
+
+const event_checker = () => {
+  if (event_btn_counter == 1){
+    event_img.innerHTML = "<img class='img_events' src='./img/tech.jpg'>";
+  }
+  else if (event_btn_counter == 2){
+    event_img.innerHTML = "<img class='img_events' src='./img/literary.jpg'>";
+  }
+  else if (event_btn_counter == 3){
+    event_img.innerHTML = "<img class='img_events' src='./img/cultural_mob.jpg'>";
+  }
+  else if (event_btn_counter == 4){
+    event_img.innerHTML = "<img class='img_events' src='./img/literary.jpg'>";
+  }
+  else if (event_btn_counter == 5){
+    event_img.innerHTML = "<img class='img_events' src='./img/misc_mob.jpg'>";
+  }
+  else {
+    event_img.innerHTML = "<img class='img_events' src='./img/tech.jpg'>";
+  }
 }

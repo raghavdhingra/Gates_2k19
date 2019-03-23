@@ -16,62 +16,63 @@
 <!----MOBILE NAV BAR-------------------------->
 		<div class="mobile_nav">
       <div style="margin-top: 5px;">
-				<img src="../assets/images/web_logo.png" height="50px;" style="margin-left:5px;"/>
-				<div style="float:right;margin-top: 10px;margin-right: 15px;cursor:pointer;">
+				<img src="./img/web_logo-white.png" height="50px;"/>
+				<div style="float:right;margin-top: 10px;margin-right: 15px;">
 					<i class="fas fa-bars" id="open_nav"></i>
 				</div>
 			</div>
 		</div>
 		<div class="open_side_nav" id="open_side_nav">
-				<div style="float: right;margin:10px;color: rgb(49, 49, 49);font-size: 40px;cursor: pointer;" id="close_nav">&times;</div>
+				<div style="float: right;margin:10px;color: #ccc;font-size: 40px;cursor: pointer;" id="close_nav">&times;</div>
 				<div class="right_nav_elmt_column">
-						<div class="right_nav_elmt" onclick="close_it();"><a href="#flashback">Flashback</a></div>
-						<div class="right_nav_elmt" onclick="close_it();"><a href="#about">about</a></div>
-						<div class="right_nav_elmt" onclick="close_it();"><a href="#sponsorships">contact</a></div>
-						<div class="right_nav_elmt" onclick="close_it();"><a href="#sponsorships">sponsorship</a></div>
+						<div class="right_nav_elmt"><a href="#flashback">Flashback</a></div>
+						<div class="right_nav_elmt"><a href="#about">about</a></div>
+						<div class="right_nav_elmt"><a href="#contact">contact</a></div>
+						<div class="right_nav_elmt"><a href="#sponsorships">sponsorship</a></div>
 				</div>
 		</div>
-<!-------------------------------------------->
+		
 
-
-
-<div class="sidenav-btn" id="sidenav-btn" onclick="openNav()">
-	<span style="font-weight: bold;font-family: Gotham_Bold">S<br>T<br>A<br>R<br><br><i class="far fa-star"></i><br><br>N<br>I<br>G<br>H<br>T</span>
-</div>
-<div id="mySidenav" class="sidenav">
-	<div class="side_nav_elmt">
-		Coming Soon...
-	</div>
-	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-</div>
-<div id="above"><br></div>
-<div class="card" style="padding-top: 10%;margin-top: 40px;" id="home">
+<Br><br><br>
+<div class="card" style="padding-top: 10%;" id="home">
 	<center>
-		<iframe src="https://www.youtube.com/embed/VBK5Dl-nFWU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		
+		<video class="video_container" poster="./video/thumb.png" id="above" controls>
+		  	<source src="./video/YOUTH-CONC.mp4" type="video/mp4">
+  			Your browser does not support HTML5 video.
+		</video>
 	</center>
 </div>
 
-<div class="card" style="padding:10% 0%;" id="events">
-	<h1 class="events" style="margin-left: 30px;">EVENTS</h1>
+
+<br><br>
+<div class="card" id="events">
+	<h1 class="events" style="margin-left: 30px;">
+		<i class="far fa-calendar-check"></i> 
+		EVENTS 
+		<i class="far fa-question-circle" onclick="alert('Click on the events images to register yourself...');"></i>
+	</h1>
 	<center>
-	<div class="img_container">
-	<img onclick="on1()" class="img_events" src="../assets/images/tech.jpg">	
-	<img onclick="on2()" class="img_events" src="../assets/images/cultural_mob.jpg">	
-	<img onclick="on3()" class="img_events" src="../assets/images/literary.jpg">
-	<img onclick="on4()" class="img_events" src="../assets/images/misc_mob.jpg">
-	</div>	
+		<div class="img_container">
+			<div id="event_images">
+				<img class="img_events" src="./img/tech.jpg">
+			</div>
+			<div class="event_btn_grid">
+				<div class="event__btn" onclick="prev_event_btn();"><i class="far fa-arrow-alt-circle-left"></i> Prev</div>
+				<div class="event__btn" onclick="next_event_btn();">Next <i class="far fa-arrow-alt-circle-right"></i></div>
+			</div>			
+		</div>	
 	</center>
 </div>
 
-<div id="flashback"><br><br></div>
-<div class="card" style="padding:10% 0%;background-color: black;">
-	<h1 class="events" style="color:#fff;margin-left:20px;margin-top: -20px;">Flashback</h1>
+
+<div class="card" style="padding:10% 0%;background-color: black;" id="flashback">
 	<div class="img_container">
 		<center>
-		<img class="mySlides animate-fade" src="../assets/images/gurdas-maan.png">
-		<img class="mySlides animate-fade" src="../assets/images/mankirat-dilpreet.png">
-		<img class="mySlides animate-fade" src="../assets/images/diljit-sharry.png">
-		<img class="mySlides animate-fade" src="../assets/images/others.png">
+		<img class="mySlides animate-fade" src="./img/gurdas-maan.png">
+		<img class="mySlides animate-fade" src="./img/mankirat-dilpreet.png">
+		<img class="mySlides animate-fade" src="./img/diljit-sharry.png">
+		<img class="mySlides animate-fade" src="./img/others.png">
 		</center>
 	</div>
 </div>
@@ -87,10 +88,10 @@
 		<div class="flip-box">
 		  <div class="flip-box-inner">
 		    <div class="flip-box-front">
-		      <img class="images" src="../assets/images/chairman.jpg" >
+		      <img class="images" src="./img/chairman.jpg" >
 		    </div>
 		    <div class="flip-box-back">
-		    	<br><br><br><br>
+		    	<br><br>
 		      <b>S. Avtar Singh Hit</b><br>
 		      <span>Chairman (GTBIT)</span>
 		    </div>
@@ -100,10 +101,10 @@
 		<div class="flip-box">
 		  <div class="flip-box-inner">
 		    <div class="flip-box-front">
-		      <img class="images" src="../assets/images/manager.jpg" >
+		      <img class="images" src="./img/manager.jpg" >
 		    </div>
 		    <div class="flip-box-back">
-		    	<br><br><br><br>
+		    	<br><br>
 		      <b>S. Harjeet Singh</b><br>
 		      <span>Manager (GTBIT)</span>
 		    </div>
@@ -113,10 +114,10 @@
 		<div class="flip-box">
 		  <div class="flip-box-inner">
 		    <div class="flip-box-front">
-		      <img class="images" src="../assets/images/director.jpg" >
+		      <img class="images" src="./img/director.jpg" >
 		    </div>
 		    <div class="flip-box-back">
-		    	<br><br><br><br>
+		    	<br><br>
 		      <b>Dr. Rominder Kaur</b><br>
 		      <span>Director (GTBIT)</span>
 		    </div>
@@ -130,50 +131,50 @@
 	<br><br>
 <div class="row"> 
   <div class="column">
-    <img src="../assets/sponsor/alok.png" style="width:100%">
-    <img src="../assets/sponsor/amazon.png" style="width:100%">
-    <img src="../assets/sponsor/aptech.png" style="width:100%">
-    <img src="../assets/sponsor/aptron.png" style="width:100%">
-    <img src="../assets/sponsor/axis-bank.png" style="width:100%">
-    <img src="../assets/sponsor/classmate.png" style="width:100%">
+    <img src="./img/alok.png" style="width:100%">
+    <img src="./img/amazon.png" style="width:100%">
+    <img src="./img/aptech.png" style="width:100%">
+    <img src="./img/aptron.png" style="width:100%">
+    <img src="./img/axis-bank.png" style="width:100%">
+    <img src="./img/classmate.png" style="width:100%">
   </div>
   <div class="column">
-    <img src="../assets/sponsor/cocacola.png" style="width:100%">
-    <img src="../assets/sponsor/coding-blocks.png" style="width:100%">
-    <img src="../assets/sponsor/digit.png" style="width:100%">
-    <img src="../assets/sponsor/dominos.png" style="width:100%">
-    <img src="../assets/sponsor/ducat.png" style="width:100%">
+    <img src="./img/cocacola.png" style="width:100%">
+    <img src="./img/coding-blocks.png" style="width:100%">
+    <img src="./img/digit.png" style="width:100%">
+    <img src="./img/dominos.png" style="width:100%">
+    <img src="./img/ducat.png" style="width:100%">
   </div>  
   <div class="column">
-    <img src="../assets/sponsor/etc.jpg" style="width:100%"> 
-    <img src="../assets/sponsor/career-launcher.png" style="width:100%">
-    <img src="../assets/sponsor/ebay.png" style="width:100%"> 	
-    <img src="../assets/sponsor/tvs.png" style="width:100%">
+    <img src="./img/etc.jpg" style="width:100%"> 
+    <img src="./img/career-launcher.png" style="width:100%">
+    <img src="./img/ebay.png" style="width:100%"> 	
+    <img src="./img/tvs.png" style="width:100%">
   </div>
   <div class="column">
-    <img src="../assets/sponsor/hindustan-times.png" style="width:100%">
-    <img src="../assets/sponsor/maruti-suzuki.png" style="width:100%">
-    <img src="../assets/sponsor/naturals.png" style="width:100%">
-    <img src="../assets/sponsor/pepsi.png" style="width:100%">
+    <img src="./img/hindustan-times.png" style="width:100%">
+    <img src="./img/maruti-suzuki.png" style="width:100%">
+    <img src="./img/naturals.png" style="width:100%">
+    <img src="./img/pepsi.png" style="width:100%">
   </div>
   <div class="column">
-    <img src="../assets/sponsor/radisson.png" style="width:100%">
-    <img src="../assets/sponsor/royal-enfield.png" style="width:100%">
-    <img src="../assets/sponsor/simco.png" style="width:100%">
-    <img src="../assets/sponsor/surya.png" style="width:100%">
+    <img src="./img/radisson.png" style="width:100%">
+    <img src="./img/royal-enfield.png" style="width:100%">
+    <img src="./img/simco.png" style="width:100%">
+    <img src="./img/surya.png" style="width:100%">
   </div>
   <div class="column">
-    <img src="../assets/sponsor/yo-china.png" style="width:100%">
-    <img src="../assets/sponsor/time.png" style="width:100%">
-    <img src="../assets/sponsor/ptc.jpg" style="width:100%">
-    <img src="../assets/sponsor/spykar.png" style="width:100%">
-    <img src="../assets/sponsor/pnb.png" style="width:100%">
+    <img src="./img/yo-china.png" style="width:100%">
+    <img src="./img/time.png" style="width:100%">
+    <img src="./img/ptc.jpg" style="width:100%">
+    <img src="./img/spykar.png" style="width:100%">
+    <img src="./img/pnb.png" style="width:100%">
   </div>
 </div>
 </div>
 
 <footer><br><br>
-	<a href="#above" style="color:inherit;text-decoration:none;"><center style="font-family: Gotham_Bold">Back To Top <i class="fas fa-angle-up" style="transform: translateY(20%);"></i></center></a>
+	<a href="#Main_Nav" style="color:inherit;text-decoration:none;"><center style="font-family: Gotham_Bold">Back To Top <i class="fas fa-angle-up" style="transform: translateY(20%);"></i></center></a>
 	<br><br><center style="font-family: Gotham_Bold;font-size: 35px;">
 			GATES 2k19<br>
 			<span style="font-size: 20px;">Guru Tegh Bahadur Institute Of Technology<br>Rajouri Garden</span><br><br>   
