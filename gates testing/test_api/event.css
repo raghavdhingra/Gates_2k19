@@ -1,0 +1,87 @@
+@import url("https://use.fontawesome.com/releases/v5.7.2/css/all.css");
+.header{
+    margin: 10px;
+}
+.header_logo{
+    height: 50px;
+}
+.event_close_btn{
+    position: relative;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    top: -35px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.event_close_btn:hover{
+    color: #aaa;
+}
+.event_tab{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-top: 2.5%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 2.5%;
+}
+.event_tab_left{
+    position: relative;
+    height: 95%;
+    float: left;
+}
+.event_tab_left img{
+    position: relative;
+    border-radius: 5px;
+}
+.event_tab_inner{
+    margin-left:40px;
+    margin-right: 40px;
+    display: grid;
+    grid-template-rows: 1fr 0.75fr 7fr 0.8fr;
+}
+.event_heading{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Gotham_Bold;
+    text-transform: capitalize;
+}
+.event_heading::after{
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100px;
+    background: rgba(0,132,118,1);
+}
+.register_btn{
+    position: absolute;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 5px;
+    width: 200px;
+    cursor: pointer;
+    background: rgb(0,132,118);
+    color: #ffffff;
+    text-transform: capitalize;
+    font-family: Gotham_Bold;
+}
+.api_btn{
+    display: inline-block;
+    color: rgb(0,132,118);
+    font-size: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.api_btn:hover{
+    color: rgb(0, 241, 217)
+}
+.iframe{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
