@@ -45,62 +45,8 @@ body{
     background-position: center center;
     background-attachment: fixed;
 }
-.side_nav_elmt{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: #fff;
-  font-size: 40px;
-  transform: translate(-50%,-50%);
-}
 div span i{
   font-size:10px;
-}
-.sidenav-btn {
-  width: 60px;
-  height: auto;
-  transition: 0.3s;
-  display: block;
-  position: fixed;
-  z-index: 11;
-  top: 35%;
-  left: 0;
-  text-align: center;
-  background: #f43c62;
-  color:white;
-  overflow-x: hidden;
-  padding: 3% 1%;
-  cursor: pointer;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-}
-.sidenav-btn:hover{
-  width: 60px !important;
-}
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 11;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-  text-align:center;
-}
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  color: #ccc;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
 }
 
 
@@ -113,12 +59,6 @@ i{
 }
 a:hover div i{
     color:#aaa;;
-}
-.flex_EventContainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
 .up_icon{
     position: fixed;
@@ -140,15 +80,7 @@ a:hover div i{
     color: rgb(231, 228, 228);
     border-color: #aaa;
 }
-.ChildContainer{
-    width:100%;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
-.TechEvent,.CulturalEvent,.Man_LibEvent,.Misc{
+.TechEvent,.CulturalEvent,.Man_LibEvent,.Misc,.divine{
     position: relative;
     margin-top: 20px;
     width: 280px;
@@ -219,19 +151,34 @@ a:hover div i{
     background: linear-gradient(0deg, rgba(245,51,51,1) 35%, rgba(53,51,134,0) 81%);
 }
 .Gradient_Misc{
-    position: absolute;
-    bottom: 0;
-    z-index: 1;
-    background: rgb(0,183,197);
-    background: linear-gradient(0deg, rgba(0,183,197,1) 35%, rgba(53,51,134,0) 81%);
-    width: 100%;
-    height: 80%;
-    transition: 0.5s;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  background: rgb(0,183,197);
+  background: linear-gradient(0deg, rgba(0,183,197,1) 35%, rgba(53,51,134,0) 81%);
+  width: 100%;
+  height: 80%;
+  transition: 0.5s;
+}
+.Gradient_divine{
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  background: rgb(0,183,197);
+  background: linear-gradient(0deg, rgba(255,173,1,1) 35%, rgba(53,51,134,0) 81%);
+  width: 100%;
+  height: 80%;
+  transition: 0.5s;
 }
 .Misc:hover .Gradient_Misc{
-    height: 155%;
-    background: rgb(0,183,197);
-    background: linear-gradient(0deg, rgba(0,183,197,1) 35%, rgba(53,51,134,0) 81%);
+  height: 155%;
+  background: rgb(0,183,197);
+  background: linear-gradient(0deg, rgba(0,183,197,1) 35%, rgba(53,51,134,0) 81%);
+}
+.divine:hover .Gradient_divine{
+  height: 155%;
+  background: rgb(0,183,197);
+  background: linear-gradient(0deg, rgba(255,173,1,1) 35%, rgba(53,51,134,0) 81%);
 }
 h2{
     position: relative;
@@ -253,7 +200,7 @@ h4{
     font-family:Gotham_Light;
     color: white;
     margin-top: 30px;
-    font-size: 20px;
+    font-size: 17px;
     padding-left: 22px;
     font-weight: lighter;
 }
@@ -337,33 +284,17 @@ h4{
       position: relative;
       margin-top:97%;
     }
-    .TechEvent,.CulturalEvent{
-        width: 90%;
-        height: 100%;
+    .Gradient_divine h2{
+      position: relative;
+      margin-top:97%;
+    }
+    .TechEvent,.CulturalEvent,.Man_LibEvent,.Misc,.divine{
         background-color: aqua;
         border-radius: 17px;
         margin: 22px;
         overflow: hidden;
         cursor: pointer;
     }
-    .Man_LibEvent{
-        width: 90%;
-        height: 103%;
-        background-color: aqua;
-        border-radius: 17px;
-        margin: 22px;
-        overflow: hidden;
-        cursor: pointer;
-    }
-    .Misc{
-      width: 92%;
-      height: 200%;
-      background-color: aqua;
-      border-radius: 17px;
-      margin: 22px;
-      overflow: hidden;
-      cursor: pointer;
-  }
     h4{
         margin-top: 30px;
     }
@@ -551,7 +482,7 @@ h4{
   float: right;
   margin-right: 20px;
   color: rgb(20, 20, 20);
-  margin-top: 15px;
+  margin-top: 20px;
   cursor: pointer;
 }
 .right_nav{
@@ -646,4 +577,125 @@ b{
 i{
   font-size: 20px;
   font-weight: bold;
+}
+
+.sidenav-btn {
+  width: 60px;
+  height: auto;
+  transition: 0.3s;
+  display: block;
+  position: fixed;
+  z-index: 11;
+  top: 35%;
+  left: 0;
+  text-align: center;
+  background: #f43c62;
+  color:white;
+  overflow-x: hidden;
+  padding: 3% 1%;
+  cursor: pointer;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.sidenav-btn:hover{
+  width: 60px !important;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 11;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  font-family: Gotham_Bold;
+  color: #ccc;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.sidenav_inner{
+  margin: 1%;
+  color: #ddd;
+  font-family: Gotham_Light;
+  font-size: 50px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+}
+
+.singer_column{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 50px;
+}
+.star_img{
+  height: 280px;
+  width: 280px;
+  border-radius: 50%;
+}
+.singer_1,.singer_2,.singer_3{
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.singer_1_span,.singer_2_span ,.singer_3_span{
+  opacity: 0;
+  transition: 0.3s;
+  height: auto;
+  width: auto;
+}
+.singer_1:hover .singer_1_span{
+  opacity: 1;
+}
+
+.singer_2:hover .singer_2_span{
+  opacity: 1;
+}
+
+.singer_3:hover .singer_3_span{
+  opacity: 1;
+}
+.star_name{
+  font-family: Gotham_Bold;
+  font-size: 40px;
+}
+.star_date{
+  font-size: 25px;
+}
+.star_venue{
+  font-size:20px;
+}
+.youtuber_inner{
+  margin: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.youtuber i{
+  font-size: 150px;
+}
+.dev_contact{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-left: 5%;
+  margin-top: 3%;
+}
+.dev_name{
+  font-size: 25px;
+  font-family: Gotham_Bold;
+}
+.nav_dev{
+  position: absolute;
+  margin-left: 15px;
+  bottom: 5px;
+  font-family: Gotham_Light;
+  font-size: 15px;
 }
