@@ -5,6 +5,7 @@
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="./css/design.css">
+<link rel="icon" href="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/images%2FGates_logo.png?alt=media&token=7230fa3f-f7cc-47c6-b8c5-faa034322a84"/>
 <body>
 
 		<a href="#above"><div class="up_icon" id="up_icon">
@@ -16,31 +17,73 @@
 <!----MOBILE NAV BAR-------------------------->
 		<div class="mobile_nav">
       <div style="margin-top: 5px;">
-				<img src="./img/web_logo-white.png" height="50px;"/>
-				<div style="float:right;margin-top: 10px;margin-right: 15px;">
+				<img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/images%2Fweb_logo.png?alt=media&token=d2456c83-2208-4267-a291-782753e60799" height="50px;" style="margin-left:5px;"/>
+				<div style="float:right;margin-top: 10px;margin-right: 15px;cursor:pointer;">
 					<i class="fas fa-bars" id="open_nav"></i>
 				</div>
 			</div>
 		</div>
 		<div class="open_side_nav" id="open_side_nav">
-				<div style="float: right;margin:10px;color: #ccc;font-size: 40px;cursor: pointer;" id="close_nav">&times;</div>
+				<div style="float: right;margin:10px;color: rgb(49, 49, 49);font-size: 40px;cursor: pointer;" id="close_nav">&times;</div>
 				<div class="right_nav_elmt_column">
-						<div class="right_nav_elmt"><a href="#flashback">Flashback</a></div>
-						<div class="right_nav_elmt"><a href="#about">about</a></div>
-						<div class="right_nav_elmt"><a href="#contact">contact</a></div>
-						<div class="right_nav_elmt"><a href="#sponsorships">sponsorship</a></div>
+						<a href="#flashback"><div class="right_nav_elmt" onclick="close_it();">Flashback</div></a>
+						<a href="#about"><div class="right_nav_elmt" onclick="close_it();">about</div></a>
+						<a href="#sponsorships"><div class="right_nav_elmt" onclick="close_it();">sponsorship</div></a>
+						<a href="#contact_us"><div class="right_nav_elmt" onclick="close_it();">contact</div></a>
+						<div class="right_nav_elmt" onclick="close_it();"><span onclick="openNav();">Star Night</span></div>
 				</div>
 		</div>
-		
+<!-------------------------------------------->
 
-<Br><br><br>
-<div class="card" style="padding-top: 10%;" id="home">
+
+<!-----Star Night-------------------------------------------------->
+<div class="sidenav-btn" id="sidenav-btn" onclick="openNav()">
+	<span style="font-weight: bold;font-family: Gotham_Bold">S<br>T<br>A<br>R<br><br><i class="far fa-star"></i><br><br>N<br>I<br>G<br>H<br>T</span>
+</div>
+<div id="mySidenav" class="sidenav">
+	<div class="side_nav_inner">
+		<div class="star_night_head">
+			<i class="far fa-star"></i>
+			STAR NIGHT 
+			<i class="far fa-star"></i>
+		</div>
+		<div class="star_column">
+			<div class="star_left">
+				<img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/images%2Fguri.jpg?alt=media&token=2b57f71e-51b0-473c-b2de-a0cf3997d399" style="border-radius: 50%;" width="150px"/>
+					<div class="mid">
+							<span class="star_name">GURI</span><br>
+							<span class="star_date">March 27<sup>th</sup>, 6:00 pm onwards</span>
+					</div>
+			</div>
+			<div class="star_right">
+					<div class="mid">
+						<span class="star_name">VARINDER VIZZ</span><br>
+						<span class="star_date">March 28<sup>th</sup>, 6:00 pm onwards</span>
+					</div>
+				<img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/images%2Fvarindra.jpg?alt=media&token=fc71ce18-b0a9-4fc8-9f00-7f4b54e9c90b" style="border-radius: 50%;" width="150px" />
+			</div>
+			<div class="star_left">
+				<img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/images%2Fninja.jpg?alt=media&token=3e6b723b-65bc-4806-908f-7a0cbf822dc9" style="border-radius: 50%;" width="150px" />
+				<div class="mid">
+						<span class="star_name">NINJA</span><br>
+						<span class="star_date">March 29<sup>th</sup>, 6:00 pm onwards</span>
+				</div>
+			</div>
+		</div>
+		<br>	
+	  
+
+	</div>
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+</div>
+
+<!------------------------------------------------------------------->
+
+
+<div id="above"><br></div>
+<div class="card" style="padding-top: 10%;margin-top: 40px;" id="home">
 	<center>
-		
-		<video class="video_container" poster="./video/thumb.png" id="above" controls>
-		  	<source src="./video/YOUTH-CONC.mp4" type="video/mp4">
-  			Your browser does not support HTML5 video.
-		</video>
+		<iframe src="https://www.youtube.com/embed/VBK5Dl-nFWU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</center>
 </div>
 
@@ -55,31 +98,33 @@
 	<center>
 		<div class="img_container">
 			<div id="event_images">
-				<img class="img_events" src="./img/tech.jpg">
+				<img class="img_events"  src="./event_img/tech.jpg" onclick="techevent();" >
 			</div>
 			<div class="event_btn_grid">
 				<div class="event__btn" onclick="prev_event_btn();"><i class="far fa-arrow-alt-circle-left"></i> Prev</div>
 				<div class="event__btn" onclick="next_event_btn();">Next <i class="far fa-arrow-alt-circle-right"></i></div>
-			</div>			
+			</div>
 		</div>	
 	</center>
 </div>
 
 
-<div class="card" style="padding:10% 0%;background-color: black;" id="flashback">
-	<div class="img_container">
+<div id="flashback"><br><br></div>
+<div class="card" style="padding:10% 0%;background-color: black;">
+	<h1 class="events_1" style="color:#fff;margin-left:30px;margin-top: -20px;"><i class="fas fa-fast-backward"></i> Flashback</h1>
+	<div class="img_container_slide">
 		<center>
-		<img class="mySlides animate-fade" src="./img/gurdas-maan.png">
-		<img class="mySlides animate-fade" src="./img/mankirat-dilpreet.png">
-		<img class="mySlides animate-fade" src="./img/diljit-sharry.png">
-		<img class="mySlides animate-fade" src="./img/others.png">
-		</center>
+			<img class="mySlides animate-fade" src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/images%2Fgurdas-maan.jpg?alt=media&token=20769de4-59a0-42bf-851c-09b8b487a62e">
+			<img class="mySlides animate-fade" src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/images%2Fmankirat-dilpreet.jpg?alt=media&token=f4782f6b-e9d8-4a2d-8c51-aa04e611366c">
+			<img class="mySlides animate-fade" src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/images%2Fdiljit-sharry.jpg?alt=media&token=9f8c8598-55e2-4881-b849-0b687d1eb243">
+			<img class="mySlides animate-fade" src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/images%2Fothers.jpg?alt=media&token=1b3d1fd5-4283-4807-a48f-afbbcf54332c">
+			</center>
 	</div>
 </div>
 
 
 <div class="card" style="padding: 10%;width: 80%;" id="about">
-	<h1 class="events">ABOUT</h1>
+	<h1 class="events"><i class="fas fa-users"></i> ABOUT</h1>
 	
 		<p>Our aim is to carve a niche for GATES that would set it apart from all other fest in India. We stand by GATES' motto of fun and success. and wish to showcase the uniqueness which GTBIT stands by hosting innovative,groundbreaking and progressive events. We envisioned this festival as a platform, or medium through which students could showcase their talent and culture</p>
 	
@@ -88,10 +133,10 @@
 		<div class="flip-box">
 		  <div class="flip-box-inner">
 		    <div class="flip-box-front">
-		      <img class="images" src="./img/chairman.jpg" >
-		    </div>
+					<img class="images" src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/images%2Fchairman.jpg?alt=media&token=db16181b-535d-4b7f-bb68-dc6beb2fe0c4" >
+				</div>
 		    <div class="flip-box-back">
-		    	<br><br>
+		    	<br><br><br><br>
 		      <b>S. Avtar Singh Hit</b><br>
 		      <span>Chairman (GTBIT)</span>
 		    </div>
@@ -101,10 +146,10 @@
 		<div class="flip-box">
 		  <div class="flip-box-inner">
 		    <div class="flip-box-front">
-		      <img class="images" src="./img/manager.jpg" >
-		    </div>
+		      <img class="images" src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/images%2Fmanager.jpg?alt=media&token=4d83a1f0-c3f9-4964-9fbe-55cd660b12b3" >
+        </div>
 		    <div class="flip-box-back">
-		    	<br><br>
+		    	<br><br><br><br>
 		      <b>S. Harjeet Singh</b><br>
 		      <span>Manager (GTBIT)</span>
 		    </div>
@@ -114,10 +159,10 @@
 		<div class="flip-box">
 		  <div class="flip-box-inner">
 		    <div class="flip-box-front">
-		      <img class="images" src="./img/director.jpg" >
-		    </div>
+		      <img class="images" src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/images%2Fdirector.jpg?alt=media&token=d027f327-1324-47f5-b120-41273e6884a1" >
+        </div>
 		    <div class="flip-box-back">
-		    	<br><br>
+		    	<br><br><br><br>
 		      <b>Dr. Rominder Kaur</b><br>
 		      <span>Director (GTBIT)</span>
 		    </div>
@@ -127,66 +172,228 @@
 </div>
 
 <div class="card" style="padding: 10% 5%;width: 90%;" id="sponsorships">
-	<h1 class="events">SPONSORSHIP</h1>
+	<h1 class="events" style="margin-left: 10px;"><i class="fas fa-rupee-sign"></i> SPONSORSHIP</h1>
 	<br><br>
 <div class="row"> 
   <div class="column">
-    <img src="./img/alok.png" style="width:100%">
-    <img src="./img/amazon.png" style="width:100%">
-    <img src="./img/aptech.png" style="width:100%">
-    <img src="./img/aptron.png" style="width:100%">
-    <img src="./img/axis-bank.png" style="width:100%">
-    <img src="./img/classmate.png" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="./img/cocacola.png" style="width:100%">
-    <img src="./img/coding-blocks.png" style="width:100%">
-    <img src="./img/digit.png" style="width:100%">
-    <img src="./img/dominos.png" style="width:100%">
-    <img src="./img/ducat.png" style="width:100%">
-  </div>  
-  <div class="column">
-    <img src="./img/etc.jpg" style="width:100%"> 
-    <img src="./img/career-launcher.png" style="width:100%">
-    <img src="./img/ebay.png" style="width:100%"> 	
-    <img src="./img/tvs.png" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="./img/hindustan-times.png" style="width:100%">
-    <img src="./img/maruti-suzuki.png" style="width:100%">
-    <img src="./img/naturals.png" style="width:100%">
-    <img src="./img/pepsi.png" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="./img/radisson.png" style="width:100%">
-    <img src="./img/royal-enfield.png" style="width:100%">
-    <img src="./img/simco.png" style="width:100%">
-    <img src="./img/surya.png" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="./img/yo-china.png" style="width:100%">
-    <img src="./img/time.png" style="width:100%">
-    <img src="./img/ptc.jpg" style="width:100%">
-    <img src="./img/spykar.png" style="width:100%">
-    <img src="./img/pnb.png" style="width:100%">
-  </div>
+    <img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/sponsor%2Falok.png?alt=media&token=28eb28c6-0e59-4021-b601-2980d8fbd24e" style="width:100%">
+      <img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/sponsor%2Famazon.png?alt=media&token=e3dabc49-4584-405b-bd42-9a8b52b886fc" style="width:100%">
+      <img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/sponsor%2Faptech.png?alt=media&token=92fefd12-6289-4c8b-80a8-42583adabf7d" style="width:100%">
+      <img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/sponsor%2Faptron.png?alt=media&token=b198bf44-bbb8-4c9d-9ac8-90cd79f0312f" style="width:100%">
+      <img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/sponsor%2Faxis-bank.png?alt=media&token=f20679a9-6b65-4e96-bfe7-a1d890b2db22" style="width:100%">
+      <img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/sponsor%2Fclassmate.png?alt=media&token=8f6f8b59-e009-4dc4-83b7-23ebddada24d" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/sponsor%2Fcocacola.png?alt=media&token=004c8c0d-1518-4b9e-bb30-120c1b204ed1" style="width:100%">
+      <img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/sponsor%2Fcoding-blocks.png?alt=media&token=53202b09-e182-49c6-9b06-80c4ebb443d6" style="width:100%">
+      <img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/sponsor%2Fdigit.png?alt=media&token=292bcdfb-7da3-4901-b655-772dd50f2272" style="width:100%">
+      <img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/sponsor%2Fdominos.png?alt=media&token=8e692eae-7c33-47f1-a2ad-b2edaabc7aac" style="width:100%">
+      <img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/sponsor%2Fducat.png?alt=media&token=101e8bfe-64fc-49f9-94e2-7fabf7dd9ca7" style="width:100%">
+    </div>  
+    <div class="column">
+      <img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/sponsor%2Fetc.jpg?alt=media&token=1b16ef4b-fefc-454a-9ece-e3c7bbf69f58" style="width:100%"> 
+      <img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/sponsor%2Fcareer-launcher.png?alt=media&token=82ab669d-c2c7-4dcd-ad14-4df4e1a1f5b3" style="width:100%">
+      <img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/sponsor%2Febay.png?alt=media&token=19007fac-5d7c-47e2-b5cf-f8247b788c88" style="width:100%"> 	
+      <img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/sponsor%2Ftvs.png?alt=media&token=95fda7d6-3bc7-4f91-921f-367f3dec3b84" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/sponsor%2Fhindustan-times.png?alt=media&token=73855e06-3c24-4f9b-9eb5-d9ca0d84cc0a" style="width:100%">
+      <img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/sponsor%2Fmaruti-suzuki.png?alt=media&token=1a4443a3-0597-4c50-91f7-08001779f231" style="width:100%">
+      <img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/sponsor%2Fnaturals.png?alt=media&token=f7082975-8b15-4fb1-9f21-ea35f181c7d4" style="width:100%">
+      <img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/sponsor%2Fpepsi.png?alt=media&token=fa8d0993-585c-485d-9475-ec62b225fce2" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/sponsor%2Fradisson.png?alt=media&token=b6827409-9af0-4abb-b190-b96164c4c858" style="width:100%">
+      <img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/sponsor%2Froyal-enfield.png?alt=media&token=62343d8f-0608-4ed0-932d-4faf225368c3" style="width:100%">
+      <img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/sponsor%2Fsimco.png?alt=media&token=2e6d6c75-0258-46eb-9362-6614cd0c4607" style="width:100%">
+      <img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/sponsor%2Fsurya.png?alt=media&token=b05841c3-7d88-4f8f-8068-20e26ce270dc" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/sponsor%2Fyo-china.png?alt=media&token=3f77669c-f97b-4b32-93fe-3f652e99e40c" style="width:100%">
+      <img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/sponsor%2Ftime.png?alt=media&token=8ce665b9-e925-446a-9651-a6b0de9ca5cb" style="width:100%">
+      <img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/sponsor%2Fptc.jpg?alt=media&token=6fabdcfc-6cbd-40ab-8bb0-7c4179958183" style="width:100%">
+      <img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/sponsor%2Fspykar.png?alt=media&token=962f9267-bcf2-41f4-81ca-dc3d8a9e1fca" style="width:100%">
+      <img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/sponsor%2Fpnb.png?alt=media&token=ca1d4f5d-41f6-488b-868f-7dd426a74f8c" style="width:100%">
+    </div>
 </div>
+</div><div id="contact_us"><br></div>
+<div class="contact_us">
+	<div class="contact_us_inner">
+		<h1 class="contact_heading"><i class="fas fa-phone" style="transform: rotateY(180deg);"></i> Contact Us</h1>
+		<div class="contact_head">
+			<div class="contact_list_1">
+				<div><b>Dr. Simmi Singh</b><br>Chief Faculty<br>Co-ordinator<br><b>+91 9968383900</b></div>
+				<div><b>P.S. Bedi</b><br>Sponsorship Team<br>Head<br><b>+91 9818778755</b></div>
+			</div>
+			<div class="contact_list_2">
+				<div><b>Gates Core Team Member:</b></div>
+				<div>Harsimran Bhatia<br>+91 9958977489<hr width="90%"></div>
+				<div>Asveen Kaur<br>+91 7982552633<hr width="90%"><Br></div>
+				<div>Simrandeep Bhatia<br>+91 9560150330<hr width="90%"></div>
+				<div>Tanveer Singh<br>+91 8373963339<hr width="90%"></div>				
+			</div>
+		</div>
+	</div>
 </div>
 
 <footer><br><br>
-	<a href="#Main_Nav" style="color:inherit;text-decoration:none;"><center style="font-family: Gotham_Bold">Back To Top <i class="fas fa-angle-up" style="transform: translateY(20%);"></i></center></a>
-	<br><br><center style="font-family: Gotham_Bold;font-size: 35px;">
-			GATES 2k19<br>
-			<span style="font-size: 20px;">Guru Tegh Bahadur Institute Of Technology<br>Rajouri Garden</span><br><br>   
+	<a href="#above" style="color:inherit;text-decoration:none;"><center style="font-family: Gotham_Bold">Back To Top <i class="fas fa-angle-up" style="transform: translateY(20%);"></i></center></a>
+	<br><center style="font-family: Gotham_Bold;font-size: 35px;">
+				GATES 2k19<br>
+			<span class="college_name">Guru Tegh Bahadur Institute Of Technology<br>G-8 Area, Rajouri Garden, New Delhi</span><hr width="80%">
+			<span>Download the Brochure: <a href="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/brochure%2FGates_brochure.pdf?alt=media&token=c9cc002f-a0e9-491f-b699-aa69d7ac21cd" target=" "><span id="brochure_btn">Download</span></a></span> <hr width="80%"> 
 			<span style="letter-spacing: 10px;">
-					| <a href="https://facebook.com" target=" "><i class="fab fa-facebook-square"></i></a> |
-					<a href="https://twitter.com" target=" "><i class="fab fa-twitter-square"></i></a> |
-					<a href="https://instagram.com" target=" "><i class="fab fa-instagram"></i></a> |
-					<a href="mailto:2k19gates@gmail.com"><i class="far fa-envelope"></i></a> |
+				| <a href="https://www.facebook.com/gates.2k19/" target=" "><i class="fab fa-facebook-square"></i></a> |
+				<a href="https://www.youtube.com/channel/UCUFjVomowr3ckZcRazRhv1Q" target=" "><i class="fab fa-youtube"></i></a> |
+				<a href="https://www.instagram.com/gates.2k19/" target=" "><i class="fab fa-instagram"></i></a> |
+				<a href="mailto:2k19gates@gmail.com"><i class="far fa-envelope"></i></a> |
 			</span>
 	</center><br><br>
 	<center>&copy; All Rights Reserved (2019)</center><br>
 </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---Technical----------------------------------------------------------------------------->
+<div id="iframe_2" class="iframe">
+		<div class="mob_event_header">
+			<div style="margin-top: 15px;"><img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/images%2Fweb_logo.png?alt=media&token=d2456c83-2208-4267-a291-782753e60799" height="50px"/></div>
+			<div style="float: right;position: relative; top: -45px;margin-right: 5px;font-size: 30px;font-weight: bold;" onclick="close_iframe();">&times;</div>
+			<center><hr width="100%"></center>
+		</div>
+		<div class="event_header" id="event_heading_2">heading</div>
+		<div id="event_detail_2" class="details">The details will come here... </div>
+		<div class="mob_event_foot">
+			<div class="foot_inner">
+			<a href="#" id="register_btn_2" target=" "><div class="mob_event_btn">Register</div></a>
+				<div style="float: right;">
+					<div class="api_btn"><i class="far fa-arrow-alt-circle-left" id="backward_btn_2"></i></div>&nbsp;&nbsp;&nbsp;
+					<div class="api_btn"><i class="far fa-arrow-alt-circle-right" id="forward_btn_2"></i></div>
+					<div class="event_counter">
+							<span id="current_event_2">1</span>
+							 of 
+							<span id="total_event_2">1</span>
+						</div>
+				</div>
+		</div>
+	</div>
+</div>
+
+<!---Cultural----------------------------------------------------------------------------->
+<div id="iframe_4" class="iframe">
+		<div class="mob_event_header">
+				<div style="margin-top: 15px;"><img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/images%2Fweb_logo.png?alt=media&token=d2456c83-2208-4267-a291-782753e60799" height="50px"/></div>
+				<div style="float: right;position: relative; top: -45px;margin-right: 5px;font-size: 30px;font-weight: bold;" onclick="close_iframe();">&times;</div>
+				<center><hr width="100%"></center>
+			</div>
+			<div class="event_header" id="event_heading_4">heading</div>
+			<div id="event_detail_4" class="details">The details will come here... </div>
+			<div class="mob_event_foot">
+				<div class="foot_inner">
+				<a href="#" id="register_btn_4" target=" "><div class="mob_event_btn" style="background:rgb(218,37,68);">Register</div></a>
+					<div style="float: right;">
+						<div class="api_btn" style="color:rgb(218,37,68);"><i class="far fa-arrow-alt-circle-left" id="backward_btn_4"></i></div>&nbsp;&nbsp;&nbsp;
+						<div class="api_btn" style="color:rgb(218,37,68);"><i class="far fa-arrow-alt-circle-right" id="forward_btn_4"></i></div>
+						<div class="event_counter">
+								<span id="current_event_4">1</span>
+								 of 
+								<span id="total_event_4">1</span>
+							</div>
+					</div>
+			</div>
+		</div>
+</div>
+
+<!---Management----------------------------------------------------------------------------->
+<div id="iframe_3" class="iframe">
+		<div class="mob_event_header">
+				<div style="margin-top: 15px;"><img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/images%2Fweb_logo.png?alt=media&token=d2456c83-2208-4267-a291-782753e60799" height="50px"/></div>
+				<div style="float: right;position: relative; top: -45px;margin-right: 5px;font-size: 30px;font-weight: bold;" onclick="close_iframe();">&times;</div>
+				<center><hr width="100%"></center>
+			</div>
+			<div class="event_header" id="event_heading_3">heading</div>
+			<div id="event_detail_3" class="details">The details will come here... </div>
+			<div class="mob_event_foot">
+				<div class="foot_inner">
+				<a href="#" id="register_btn_3" target=" "><div class="mob_event_btn" style="background:rgb(253,1,0);">Register</div></a>
+					<div style="float: right;">
+						<div class="api_btn" style="color:rgb(253,1,0);"><i class="far fa-arrow-alt-circle-left" id="backward_btn_3"></i></div>&nbsp;&nbsp;&nbsp;
+						<div class="api_btn" style="color:rgb(253,1,0);"><i class="far fa-arrow-alt-circle-right" id="forward_btn_3"></i></div>
+						<div class="event_counter">
+								<span id="current_event_3">1</span>
+								 of 
+								<span id="total_event_3">1</span>
+							</div>
+					</div>
+			</div>
+		</div>
+</div>
+
+<!---Miscellaneous----------------------------------------------------------------------------->
+<div id="iframe_1" class="iframe">
+	<div class="mob_event_header">
+			<div style="margin-top: 15px;"><img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/images%2Fweb_logo.png?alt=media&token=d2456c83-2208-4267-a291-782753e60799" height="50px"/></div>
+			<div style="float: right;position: relative; top: -45px;margin-right: 5px;font-size: 30px;font-weight: bold;" onclick="close_iframe();">&times;</div>
+			<center><hr width="100%"></center>
+		</div>
+		<div class="event_header" id="event_heading_1">heading</div>
+		<div id="event_detail_1" class="details">The details will come here... </div>
+		<div class="mob_event_foot">
+			<div class="foot_inner">
+			<a href="#" id="register_btn_1" target=" "><div class="mob_event_btn" style="background:rgba(0,132,118,1);">Register</div></a>
+				<div style="float: right;">
+					<div class="api_btn" style="color:rgba(0,132,118,1);"><i class="far fa-arrow-alt-circle-left" id="backward_btn_1"></i></div>&nbsp;&nbsp;&nbsp;
+					<div class="api_btn" style="color:rgba(0,132,118,1);"><i class="far fa-arrow-alt-circle-right" id="forward_btn_1"></i></div>
+					<div class="event_counter">
+						<span id="current_event_1">1</span>
+						 of 
+						<span id="total_event_1">1</span>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+
+
+<!-----Divine ------------------------------------>
+<div id="iframe_5" class="iframe">
+	<div class="mob_event_header">
+			<div style="margin-top: 15px;"><img src="https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/images%2Fweb_logo.png?alt=media&token=d2456c83-2208-4267-a291-782753e60799" height="50px"/></div>
+			<div style="float: right;position: relative; top: -45px;margin-right: 5px;font-size: 30px;font-weight: bold;" onclick="close_iframe();">&times;</div>
+			<center><hr width="100%"></center>
+		</div>
+		<div class="event_header" id="event_heading_5">heading</div>
+		<div id="event_detail_5" class="details">The details will come here... </div>
+		<div class="mob_event_foot">
+			<div class="foot_inner">
+			<a href="#" id="register_btn_5" target=" "><div class="mob_event_btn" style="background:rgb(255,173,1);">Register</div></a>
+				<div style="float: right;">
+					<div class="api_btn" style="color:rgb(255,173,1);"><i class="far fa-arrow-alt-circle-left" id="backward_btn_5"></i></div>&nbsp;&nbsp;&nbsp;
+					<div class="api_btn" style="color:rgb(255,173,1);"><i class="far fa-arrow-alt-circle-right" id="forward_btn_5"></i></div>
+					<div class="event_counter">
+						<span id="current_event_5">1</span>
+						 of 
+						<span id="total_event_5">1</span>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+
+
 <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>

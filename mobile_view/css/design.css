@@ -1,19 +1,20 @@
 @import url("https://use.fontawesome.com/releases/v5.7.2/css/all.css");
 @font-face {
   font-family: Gotham_Bold;
-  src: url(../assets/fonts/GothamBold.otf);
+  src: url(../../assets/fonts/GothamBold.otf);
 }
 @font-face {
   font-family: Gotham_Light;
-  src: url(../assets/fonts/GothamLight.otf);
+  src: url(../../assets/fonts/GothamLight.otf);
 }
 html{
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body{
   margin: 0;
-  background-image: url("./img/gates_web_background.png");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/images%2Fgates_web_background.png?alt=media&token=e33205e0-f10d-4917-9537-3061f5cd4993");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -29,6 +30,7 @@ body{
   padding-left: 4px;
   padding-right: 4px;
   padding-bottom:1px;
+  padding-top: 3px;
   font-size: 35px;
   bottom: 3%;
   cursor: pointer;
@@ -62,18 +64,19 @@ color:#ccc;
   width: 5%;
   height: auto;
   display: block;
+  overflow: hidden;
   position: fixed;
   z-index: 11;
   top: 35%;
   left: 0;
+  transition: 0.3s;
   text-align: center;
   background: #f43c62;
   color:white;
   overflow-x: hidden;
   padding: 3% 1%;
   cursor: pointer;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
+  border-radius: 0 10px 10px 0;
 }
 .sidenav {
   height: 100%;
@@ -104,9 +107,34 @@ color:#ccc;
   background: #333;
 }
 
+.events_1{
+  font-size: 30px;
+  color: #333;
+  margin-left: 150px;
+}
+.events_1::after{
+  display: block;
+  content: "";
+  height: 3px;
+  width: 80px;
+  background: #aaa !important;
+}
+.side_nav_inner{
+  color: #ccc;
+  margin: 10px;
+}
+.star_night_head{
+  font-size: 30px;
+  color: #ddd; 
+  font-family: Gotham_Bold;
+}
 
+div span i{
+  font-size:10px;
+}
 .sidenav .closebtn {
   position: absolute;
+  font-family: Gotham_Bold;
   top: 0;
   color: #ccc;
   right: 25px;
@@ -124,12 +152,13 @@ color:#ccc;
   overflow: hidden;
   z-index: 11;
   transition: 0.3s;
+  border-radius: 10px 0 0 10px;
   height: 100%;
   width: 0;
-  background: rgba(30,30,30,0.95);
+  background: rgba(231, 231, 231, 0.95);
 }
 .right_nav_elmt_column{
-  color:#ccc;
+  color:rgb(94, 94, 94);
   font-family: Gotham_Bold;
   font-size: 30px;
   text-transform: capitalize;
@@ -139,20 +168,15 @@ color:#ccc;
 .right_nav_elmt{
   transition: 0.3s;
   cursor: pointer;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid rgb(122, 122, 122);
   padding-bottom:10px;
   margin:10px;
 }
 .right_nav_elmt:hover{
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 .right_nav_elmt:last-child{
   border:none;
-}
-
-/*----video----*/
-.video_container{
-  width: 60%;
 }
 
 
@@ -177,15 +201,6 @@ h1{
   position: fixed;
   width: 20%;
   float: left;
-}
-
-@media screen and (max-width: 600px) {
-  
-  /*----video----*/
-  .video_container{
-    width: 90%;
-  }
-
 }
 
 .card{
@@ -215,6 +230,14 @@ h1{
 }
 
 /*---event images--*/
+
+.img_events{
+  border-radius: 25px;
+  height: 400px;
+}
+.img_container{
+  width: 90%;
+}
 .event_btn_grid{
   display: grid;
   grid-template-columns: auto auto;
@@ -225,20 +248,19 @@ h1{
   margin-top: 20px;
   margin-bottom: 50px;
   height: 30px;
+  font-family: Gotham_Bold;
   width: 120px;
-  font-size: 20px;
+  font-size: 25px;
+  color: rgba(0,0,0,0.8);
   line-height: 30px;
   vertical-align: middle;
   text-transform: uppercase;
   border-radius: 5px;
-  border: 2px solid red;
+  background: rgba(230, 230, 230, 0.6);
 }
-.img_events{
-  border-radius: 25px;
-  height: 400px;
-}
-.img_container{
+.img_container_slide{
   width: 90%;
+  margin: 5%;
 }
 
 /*---overlay---*/
@@ -413,10 +435,192 @@ h1{
   position: fixed;
   width: 100%;
   height: 65px;
-  background: rgba(30,30,30,0.95);
-  color: #ccc;
+  background: rgba(226, 226, 226, 0.95);
+  color: rgb(34, 34, 34);
   top: 0;
   z-index: 10;
   font-size: 25px;
   left: 0;
+}
+.iframe{
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 0.2s;
+  height: 100%;
+  width: 100%;
+  color: #333;
+  width: 100%;
+  background: #ffffff;
+  z-index: -1;
+  opacity: 0;
+  display: grid;
+  grid-template-rows: 1fr 1fr 4fr 1fr;
+}
+.mob_event_header{
+  height: inherit;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.event_header{
+  font-size: 30px;
+  margin-top: 10px;
+  margin-left: 20px;
+  text-transform: capitalize;
+  font-family: Gotham_Bold;
+  text-transform: capitalize;
+}
+.event_header::after{
+  display: block;
+  height: 3px;
+  content:"";
+  width: 40px;
+  background: rgb(81, 0, 110);
+}
+.details{
+  font-size: 15px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  font-family: Gotham_Light;
+}
+.mob_event_foot{
+  margin-left: 20px;
+}
+.foot_inner{
+  margin: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.mob_event_btn{
+  height: 40px;
+  background: rgb(81, 0, 110);
+  color: white; 
+  width: 130px;
+  margin-top: 10px;
+  margin-right: 25px;
+  text-align: center;
+  line-height: 40px;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+.api_btn{
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: rgb(81, 0, 110);
+  font-size: 50px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.api_btn:hover{
+  color: rgb(141, 0, 192);
+}
+#event_heading_4::after{
+  background: rgb(218,37,68);
+}
+#event_heading_1::after{
+  background: rgba(0,132,118,1);
+}
+#event_heading_3::after{
+  background:rgb(253,1,0);
+}
+#event_heading_5::after{
+  background:rgb(255,173,1);
+}
+
+#brochure_btn{
+  padding: 10px;
+  margin-left: 20px;
+  line-height: 20px;
+  vertical-align: middle;
+  color: #ccc;
+  transition: 0.3s;
+  display: inline-block;
+  border: 2px solid #ccc;
+}
+
+#brochure_btn:hover{
+  border-color: #fff;
+  color: #fff;
+}
+
+.college_name{
+  font-size: 20px;
+}
+@media (max-width: 700px){
+  .college_name{
+    font-size: 12px;
+  }
+}
+.contact_us{
+  font-family: Gotham_Light;
+  color: #333;
+
+}
+.contact_us_inner{
+  margin: 20px;
+}
+.contact_heading{
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.contact_heading::after{
+  content:"";
+  display: block;
+  height: 3px;
+  width: 100px;
+  background: #333;
+}
+.contact_head{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contact_list_1{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.contact_list_2{
+  display: grid;
+  grid-template-rows: 1fr 0.8fr 0.8fr 0.8fr 0.8fr;
+}
+b{
+  font-family: Gotham_Bold;
+}
+.star_column{
+  text-align:center;
+  margin-top: 30px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.star_left{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.star_right{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.mid{
+  margin-top: 25%;
+}
+.star_name{
+  font-family: Gotham_Bold;
+  font-size: 20px;
+}
+.star_date{
+  font-size: 15px;
+}
+.dev_inner{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.nav_dev{
+  position: absolute;
+  bottom: 15px;
+  margin-left: 10px;
+  font-size: 15px;
 }
