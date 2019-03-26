@@ -1,3 +1,9 @@
+//Developer Information
+const dev_info = "This website is developed by:\n Raghav Dhingra, 1st Year CSE student.\n\n For any updation or bugs in this site,\n Feel free to mail at:\n raghav.dhingra15@gmail.com"
+console.log(dev_info);
+
+
+//Main Content
 const up_icon = document.getElementById("up_icon");
 const reponsive_nav = document.getElementById("responsive_nav");
 const right_nav = document.getElementById("right_nav");
@@ -81,10 +87,14 @@ function carousel() {
 //////////////////////////////////////////////
 function openNav() {
   document.getElementById("mySidenav").style.width = "100%";
+  document.body.style.overflow="hidden";
+  document.getElementById("closebtn").style.position="fixed";
 }
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
+  document.body.style.overflowY="visible";
+  document.getElementById("closebtn").style.position="absolute";
 }
 
 // for class="iframe"
@@ -100,7 +110,10 @@ const close_iframe = () => {
   
   document.getElementById("iframe_4").style.opacity='0';
   document.getElementById("iframe_4").style.zIndex='-1';
-  document.body.style.overflow="visible";
+  
+  document.getElementById("iframe_5").style.opacity='0';
+  document.getElementById("iframe_5").style.zIndex='-1';
+  document.body.style.overflowY="visible";
 }
 
 
@@ -374,8 +387,71 @@ backward_4.addEventListener("click",()=>{
 });
 
 
-request_2.send();
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+// Defining different IDs
+//request_2
+
+const heading_5 = document.getElementById("event_heading_5");
+const detail_5 = document.getElementById("event_detail_5");
+const btn_5 = document.getElementById("register_btn_5");
+const forward_5 = document.getElementById("forward_btn_5");
+const backward_5 = document.getElementById("backward_btn_5");
+var arr5 = 0, arr_num_5 = 0;
+
+
+const request_5 = new XMLHttpRequest();
+request_5.open('GET','https://raw.githubusercontent.com/raghavdhingra/Gates_2k19/master/apis/divine_metadata.json');
+
+const divineevent = () => {
+  arr5 = JSON.parse(request_5.responseText);
+  heading_5.innerHTML = arr5[arr_num_5].name;
+  detail_5.innerHTML = arr5[arr_num_5].data;
+  btn_5.href = arr5[arr_num_5].link;
+  document.body.style.overflowY="hidden";
+  document.getElementById("iframe_5").style.zIndex='11';
+  document.getElementById("iframe_5").style.opacity='1';
+  document.getElementById("total_event_5").innerText=JSON.parse(request_5.responseText).length;
+}
+
+forward_5.addEventListener("click",()=>{
+  arr5 = JSON.parse(request_5.responseText);
+  if (arr_num_5 === arr5.length-1){
+      arr_num_5 = 0;
+      heading_5.innerHTML = arr5[arr_num_5].name;
+      detail_5.innerHTML = arr5[arr_num_5].data;
+      btn_5.href = arr5[arr_num_5].link;
+  }
+  else{
+      arr_num_5+=1;
+      heading_5.innerHTML = arr5[arr_num_5].name;
+      detail_5.innerHTML = arr5[arr_num_5].data;
+      btn_5.href = arr5[arr_num_5].link;
+  }
+  document.getElementById("current_event_5").innerText=arr_num_5+1;
+});
+backward_5.addEventListener("click",()=>{
+  arr5 = JSON.parse(request_5.responseText);
+  if (arr_num_5 === 0){
+      arr_num_5 = arr5.length - 1;
+      heading_5.innerHTML = arr5[arr_num_5].name;
+      detail_5.innerHTML = arr5[arr_num_5].data;
+      btn_5.href = arr5[arr_num_5].link;
+  }
+  else {
+      arr_num_5-=1;
+      heading_5.innerHTML = arr5[arr_num_5].name;
+      detail_5.innerHTML = arr5[arr_num_5].data;
+      btn_5.href = arr5[arr_num_5].link;
+  }
+  document.getElementById("current_event_5").innerText=arr_num_5+1;
+});
+
+
 
 request_1.send();
+request_2.send();
 request_3.send();
 request_4.send();
+request_5.send();
