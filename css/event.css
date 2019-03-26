@@ -111,6 +111,9 @@
 #culture_register_btn{
     background: rgb(218,37,68);
 }
+#divine_register_btn{
+    background: rgb(255,173,1);
+}
 #backward_btn_4,#forward_btn_4{
     color: rgb(218,37,68);
 }
@@ -118,16 +121,43 @@
 #event_heading_3::after{
     background: rgb(253,1,0);
 }
+#event_heading_5::after{
+    background: rgb(255,173,1);
+}
 #manage_register_btn{
     background: rgb(253,1,0);
 }
 #backward_btn_3,#forward_btn_3{
     color: rgb(253,1,0);
 }
+#backward_btn_5,#forward_btn_5{
+    color:rgb(255,173,1);
+}
 
 .fa-arrow-alt-circle-left{
     font-size: 40px;
-  }
-  .fa-arrow-alt-circle-right{
+}
+.fa-arrow-alt-circle-right{
     font-size: 40px;
-  }
+ }
+ .event_container{
+     height: auto;
+     width: 100%;
+ }
+ .ChildContainer{
+     margin: 5%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 25px;
+ }
+ .child_inner_1{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     justify-items: center;
+ }
+ 
+ .child_inner_2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
