@@ -682,20 +682,60 @@ i{
 .youtuber i{
   font-size: 150px;
 }
-.dev_contact{
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  margin-left: 5%;
-  margin-top: 3%;
-}
-.dev_name{
-  font-size: 25px;
+
+.click_register_btn{
+  position: relative;
+  text-align:center;
+  margin-top:-30px;
+  padding: 10px;
+  background: #ccc;
+  font-size: 30px;
   font-family: Gotham_Bold;
+  color: #333;
+  border: 0.5px solid #333;
+  box-shadow: 1px 1px 3px 0.5px #fff;
+  width: 350px;
+  transition: 0.3s;
+  border-radius: 5px;
 }
-.nav_dev{
-  position: absolute;
-  margin-left: 15px;
-  bottom: 5px;
-  font-family: Gotham_Light;
-  font-size: 15px;
+.click_register_btn:hover{
+  box-shadow: none;
+}
+
+
+/* Animation_1 */
+.move_left{
+  position: relative;
+  animation: move_left 0.5s linear infinite forwards;
+}
+
+@keyframes move_left{
+  0%{
+    left: 0;
+  }
+  50%{
+    left: -8px;
+  }
+  100%{
+    left: 0;
+  }
+}
+
+
+/*Animation_2*/
+.move_right{
+  position: relative;
+  animation: move_right 0.5s linear infinite forwards;
+}
+
+@keyframes move_right{
+  0%{
+    left: 0;
+  }
+  50%{
+    left: 8px;
+  }
+  100%{
+    left: 0;
+  }
 }
