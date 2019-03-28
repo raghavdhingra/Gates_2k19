@@ -1,3 +1,4 @@
+@import url("https://use.fontawesome.com/releases/v5.7.2/css/all.css");
 @font-face {
     font-family: Gotham_Bold;
     src: url(../assets/fonts/GothamBold.otf);
@@ -6,138 +7,739 @@
     font-family: Gotham_Light;
     src: url(../assets/fonts/GothamLight.otf);
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: linear-gradient(to bottom,rgb(231, 231, 231),#aaa); 
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    cursor: default;
+}
 body{
-    background-image: url(../assets/images/gates_web_background.png);
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/images%2Fgates_web_background.png?alt=media&token=e33205e0-f10d-4917-9537-3061f5cd4993");
     background-size: cover;                     
     background-repeat: no-repeat;
-    background-position: center center;    
+    background-position: center center;
+    background-attachment: fixed;
 }
-.flex_EventContainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+div span i{
+  font-size:10px;
 }
-.ChildContainer{
-    width:100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+
+
+a:link, a:visited{
+    color: #333;
 }
-.TechEvent,.CulturalEvent,.Man_LibEvent,.Misc{
+i{
+    transition: 0.3s;
+    font-size: 30px;
+}
+a:hover div i{
+    color:#aaa;;
+}
+.up_icon{
+    position: fixed;
+    border-radius: 50%;
+    border: 2px solid #333;
+    color: rgb(121, 121, 121);
+    padding: 3px;
+    bottom:2%;
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 0;
+    z-index: -1;
+    right: 2%;
+}
+.up_icon i{
+  font-size: 40px;
+}
+.up_icon:hover{
+    color: rgb(231, 228, 228);
+    border-color: #aaa;
+}
+.TechEvent,.CulturalEvent,.Man_LibEvent,.Misc,.divine{
     position: relative;
-    bottom: -50px;
-    width: 240px;
-    height: 60%;
+    margin-top: 20px;
+    width: 280px;
+    height: 450px;
     background-color: aqua;
     border-radius: 17px;
-    margin: 22px;
+    margin-left: 22px;
+    margin-right: 22px;
     overflow: hidden;
     cursor: pointer;
 }
 .Event_img{
     position: relative;
-    top:-80px;
-    width: 120%;
+    width: 100%;
     height: 100%;
 }
 .Event_img_Manage{
     position: relative;
-    top:-2px;
-    left:-55px;
-    width: 210%;
-    height: 80%;
-}
-.Event_img_Misc{
-    position: relative;
-    top:-2px;
-    left:-100px;
-    width: 210%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
 }
 .Gradient_TechEvent{
     position: absolute;
     bottom: 0;
+    color: white;
     z-index: 1;
     background: rgb(53,51,134);
     background: linear-gradient(0deg, rgba(53,51,134,1) 35%, rgba(53,51,134,0) 81%);
     width: 100%;
     height: 80%;
+    transition: 0.5s;
+}
+.TechEvent:hover .Gradient_TechEvent{
+    height: 155%;
+    background: rgba(53,51,134,0);
+    background: linear-gradient(0deg, rgba(53,51,134,1) 35%, rgba(53,51,134,0) 100%);
 }
 .Gradient_Cultural{
     position: absolute;
     bottom: 0;
     z-index: 1;
     background: rgb(246,99,128);
-background: linear-gradient(0deg, rgba(246,99,128,1) 35%, rgba(53,51,134,0) 81%);
+    background: linear-gradient(0deg, rgba(246,99,128,1) 35%, rgba(53,51,134,0) 81%);
     width: 100%;
+    transition: 0.5s;
     height: 80%;
+}
+
+.CulturalEvent:hover .Gradient_Cultural{
+    height: 155%;
+    background: rgb(246,99,128);
+    background: linear-gradient(0deg, rgba(246,99,128,1) 35%, rgba(53,51,134,0) 81%);
 }
 .Gradient_LibEvent{
     position: absolute;
     bottom: 0;
+    transition: 0.5s;
     z-index: 1;
     background: rgb(245,51,51);
-background: linear-gradient(0deg, rgba(245,51,51,1) 35%, rgba(53,51,134,0) 81%);
+    background: linear-gradient(0deg, rgba(245,51,51,1) 35%, rgba(53,51,134,0) 81%);
     width: 100%;
     height: 80%;
 }
+
+.Man_LibEvent:hover .Gradient_LibEvent{
+    height: 155%;
+    background: rgb(245,51,51);
+    background: linear-gradient(0deg, rgba(245,51,51,1) 35%, rgba(53,51,134,0) 81%);
+}
 .Gradient_Misc{
-    position: absolute;
-    bottom: 0;
-    z-index: 1;
-    background: rgb(0,183,197);
-background: linear-gradient(0deg, rgba(0,183,197,1) 35%, rgba(53,51,134,0) 81%);
-    width: 100%;
-    height: 80%;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  background: rgb(0,183,197);
+  background: linear-gradient(0deg, rgba(0,183,197,1) 35%, rgba(53,51,134,0) 81%);
+  width: 100%;
+  height: 80%;
+  transition: 0.5s;
+}
+.Gradient_divine{
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  background: rgb(0,183,197);
+  background: linear-gradient(0deg, rgba(255,173,1,1) 35%, rgba(53,51,134,0) 81%);
+  width: 100%;
+  height: 80%;
+  transition: 0.5s;
+}
+.Misc:hover .Gradient_Misc{
+  height: 155%;
+  background: rgb(0,183,197);
+  background: linear-gradient(0deg, rgba(0,183,197,1) 35%, rgba(53,51,134,0) 81%);
+}
+.divine:hover .Gradient_divine{
+  height: 155%;
+  background: rgb(0,183,197);
+  background: linear-gradient(0deg, rgba(255,173,1,1) 35%, rgba(53,51,134,0) 81%);
 }
 h2{
     position: relative;
     font-family:Gotham_Bold;
     color: white;
-    top:260px;
+    margin-top:280px;
     padding-left: 22px;
 }
 h3{
     position: relative;
     font-family:Gotham_Light;
     color: white;
-    top:240px;
     font-size: 22px;
     padding-left: 22px;
     font-weight: lighter;
 }
+h4{
+    position: relative;
+    font-family:Gotham_Light;
+    color: white;
+    margin-top: 30px;
+    font-size: 17px;
+    padding-left: 22px;
+    font-weight: lighter;
+}
 .Main_Nav{
-    position: absolute;
+    position: relative;
     top:0;
     left:0;
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 90px;
+    height: 80px;
+}
+.down{
+    text-align: center;
 }
 .Brand_Logo{
-    padding-top: 45px;
-    width: 20%;
-    height: 90%;
-    padding-left: 180px;
+    padding-top: 40px;
+    width: 50px;
+    display: inline-flex;
+    text-align: center;
+    line-height: 90px;
+    color: #333;
+    font-size: 40px;
+    font-family:Gotham_Bold;
+    vertical-align: middle;
+    height: 50px;
+    padding-left: 80px;
 }
 .navbar_element{
-    padding-left: 240px;
+    padding-left: 550px;
     font-family: Gotham_Light;
     text-transform: capitalize;
-    font-size: 35px;
+    font-size: 30px;
     display: flex;
+    font-weight: lighter;
     flex-direction: row;
-    padding-top: 80px;
+    padding-top: 65px;
+}
+.events{
+    font-family: Gotham_Bold;
+    font-size: 40px;
+    color: #333;
+    margin-left: 50px;
+}
+.card > .events{
+    margin-left:0;
+}
+.events::after{
+    display: block;
+    content: "";
+    height: 3px;
+    width: 80px;
+    background: #333;
+
 }
 .elmt{
     margin-left: 40px;
     cursor: pointer;
+    transition: .7s;
 }
-.down{
+/* .elmt::after {
+    content: '';
+    display: block;
+    width: 30%;
+    height: 2px;
+    background: #777;
+    transition: width .3s;
+} */
+.elmt:hover::after {
+    width: 100%;
+}
+@media (max-width:1500px){
+    .Gradient_TechEvent h2,.Gradient_Cultural h2{
+        position: relative;
+        margin-top: 105%;
+    }
+    .Gradient_LibEvent h2{
+      position: relative;
+      margin-top: 100%;
+    }
+    .Gradient_Misc h2{
+      position: relative;
+      margin-top:97%;
+    }
+    .Gradient_divine h2{
+      position: relative;
+      margin-top:97%;
+    }
+    .TechEvent,.CulturalEvent,.Man_LibEvent,.Misc,.divine{
+        background-color: aqua;
+        border-radius: 17px;
+        margin: 22px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    h4{
+        margin-top: 30px;
+    }
+    .navbar_element{
+      font-size: 25px;
+      padding-left: 20%;
+    }
+    .Brand_Logo{
+        padding-top: 35px;
+        width: 20%;
+        height: 90%;
+        padding-left: 50px;
+    }
+}
+@media (max-width:1050px){
+    .navbar_element{
+        padding-left: 20%;
+    }
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 2px 6px;
+  }
+  .column {
+    -ms-flex: 12%; /* IE10 */
+    flex: 12%;
+    max-width: 12%;
+    padding: 0 2%;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  
+  
+/*-- Flip image--*/
+.flip-box {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    border-radius:50%;
+    perspective: 1000px;
+    display: inline-block;
+    margin: 5%;
+  }
+  
+  .flip-box-inner {
     position: relative;
-    top: -50px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-radius: 50%;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius:50%;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px grey;
+  }
+  
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+.flip-box-back b{
+  font-size:16px;
 }
+/*--animate fading--*/
+.mySlides{
+    width: 80%;
+    max-height:50%;
+    display: inline-block;
+    border-radius: 10px;
+  }
+    .animate-fade{
+    animation:fading 4s infinite;
+    }
+    @keyframes fading{
+      0%{
+        opacity:0
+      }
+      20%{
+        opacity:1
+      }
+      80%{
+        opacity:1
+      }
+      100%{
+        opacity:0
+      }
+    }
+
+/*--animate zoom--*/
+.animate_zoom {
+    animation:animatezoom 0.6s
+  }
+  @keyframes animatezoom{
+    from{
+      transform:scale(0)
+      }
+    to{
+      transform:scale(1)
+      }
+  }
+  
+  .img_tag{
+    width: 30%;
+    height: 100%;
+    float: left;
+  }
+  .img_content{
+    width: 70%;
+    float: left;
+    height: 100%;
+  }
+  .images{
+    float: right;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }      
+  footer{
+    background-color: black;
+    color: #ccc;
+    width: 100%;
+  }
+  
+.card{
+    width: 100%;
+    min-height: 70%;
+    max-height: auto;
+    overflow: auto;
+  }
+  a{
+      text-decoration: none;
+      color: inherit;
+  }
+  a i {
+      color: #888;
+  }
+  a i:hover{
+    color:#ccc;
+  }
+/* Responsive navbar */
+.responsive_nav{
+  position: fixed;
+  top:0;
+  left: 0;
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+  transition: 0.3s;
+  background: rgba(240, 240, 240, 0.95);
+  z-index: 10;
+}
+.nav_logo{
+  display: inline-block;
+  color:rgb(63, 63, 63);
+  font-family:Gotham_Bold;
+  font-size:30px;
+  line-height: 70px;
+  vertical-align: middle;
+}
+.bar_icon{
+  float: right;
+  margin-right: 20px;
+  color: rgb(20, 20, 20);
+  margin-top: 20px;
+  cursor: pointer;
+}
+.right_nav{
+  position: fixed;
+  right: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 0;
+  transition: 0.3s;
+  z-index: 10;
+  background: rgba(240, 240, 240, 0.95);
+}
+.right_nav_elmt_column{
+  color:rgb(56, 56, 56);
+  font-family: Gotham_Bold;
+  font-size: 30px;
+  text-transform: capitalize;
+  margin-top: 100px;
+  text-align: center;
+}
+.right_nav_elmt{
+  transition: 0.3s;
+  cursor: pointer;
+  border-bottom: 2px solid rgba(41, 41, 41, 0.664);
+  padding-bottom:10px;
+  margin:10px;
+}
+.right_nav_elmt:hover{
+  color: rgb(197, 197, 197);
+}
+.right_nav_elmt:last-child{
+  border:none;
+}
+a:link,a:visited,a:active{
+  color: inherit;
+}
+
+#brochure_btn{
+  padding: 10px;
+  margin-left: 20px;
+  line-height: 20px;
+  vertical-align: middle;
+  color: #ccc;
+  border-radius: 5px;
+  transition: 0.3s;
+  display: inline-block;
+  border: 2px solid #ccc;
+}
+#brochure_btn:hover{
+  border-color: #fff;
+  color: #fff;
+}
+.contact_us{
+  font-family: Gotham_Light;
+  color: #333;
+}
+.contact_inner{
+  margin: 5%;
+}
+.contact_heading{
+  font-family: Gotham_Bold;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+.contact_heading::after{
+  content:"";
+  display: block;
+  height: 3px;
+  width: 150px;
+  background: #333;
+}
+#one{
+  margin-left: 5%;
+}
+.contact_head{
+  display: grid;
+  margin-top: 30px;
+  grid-template-columns: 1fr 1fr;
+}
+.contact_list_1{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.contact_list_2{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+b{
+  font-family: Gotham_Bold;
+  font-size: 25px;
+}
+i{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sidenav-btn {
+  width: 60px;
+  height: auto;
+  transition: 0.3s;
+  display: block;
+  position: fixed;
+  z-index: 11;
+  top: 35%;
+  left: 0;
+  text-align: center;
+  background: #f43c62;
+  color:white;
+  overflow-x: hidden;
+  padding: 3% 1%;
+  cursor: pointer;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.sidenav-btn:hover{
+  width: 60px !important;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 11;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  font-family: Gotham_Bold;
+  color: #ccc;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.sidenav_inner{
+  margin: 1%;
+  color: #ddd;
+  font-family: Gotham_Light;
+  font-size: 50px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+}
+
+.singer_column{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 50px;
+}
+.star_img{
+  height: 280px;
+  width: 280px;
+  border-radius: 50%;
+}
+.singer_1,.singer_2,.singer_3{
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.singer_1_span,.singer_2_span ,.singer_3_span{
+  opacity: 0;
+  transition: 0.3s;
+  height: auto;
+  width: auto;
+}
+.singer_1:hover .singer_1_span{
+  opacity: 1;
+}
+
+.singer_2:hover .singer_2_span{
+  opacity: 1;
+}
+
+.singer_3:hover .singer_3_span{
+  opacity: 1;
+}
+.star_name{
+  font-family: Gotham_Bold;
+  font-size: 40px;
+}
+.star_date{
+  font-size: 25px;
+}
+.star_venue{
+  font-size:20px;
+}
+.youtuber_inner{
+  margin: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.youtuber i{
+  font-size: 150px;
+}
+
+.click_register_btn{
+  position: relative;
+  text-align:center;
+  margin-top:-30px;
+  padding: 10px;
+  background: #ccc;
+  font-size: 30px;
+  font-family: Gotham_Bold;
+  color: #333;
+  border: 0.5px solid #333;
+  box-shadow: 1px 1px 3px 0.5px #fff;
+  width: 350px;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+.click_register_btn:hover{
+  box-shadow: none;
+}
+
+
+/* Animation_1 */
+.move_left{
+  position: relative;
+  animation: move_left 0.5s linear infinite forwards;
+}
+
+@keyframes move_left{
+  0%{
+    left: 0;
+  }
+  50%{
+    left: -8px;
+  }
+  100%{
+    left: 0;
+  }
+}
+
+
+/*Animation_2*/
+.move_right{
+  position: relative;
+  animation: move_right 0.5s linear infinite forwards;
+}
+
+@keyframes move_right{
+  0%{
+    left: 0;
+  }
+  50%{
+    left: 8px;
+  }
+  100%{
+    left: 0;
+  }
+}
+
+

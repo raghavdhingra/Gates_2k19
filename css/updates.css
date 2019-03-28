@@ -1,0 +1,104 @@
+    .ChangebackForGuri{
+    background-color: #e74c3c !important;
+  }
+  .ChangebackForNinja{
+    background-color: #e67e22 !important;
+  }
+  .ChangebackForVarinder{
+    background-color: #f1c40f !important;
+  }     
+
+  #button{
+    color:#f7f7f7;
+    font-family: verdana;
+    width: 200px;
+    padding: 15px;
+    border: 2px solid #f7f7f7;
+    text-align: center;
+    position: relative;
+    top:90%;
+    overflow: hidden;
+    transition: .5s;
+}
+#button:after{
+    content: '';
+    width: 0px;
+    height: 120%;
+    position: absolute;
+    left: -10%;
+    bottom: 0;
+    background-color: #f7f7f7;
+    transform: skewX(15deg);
+    z-index: -1;
+    transition: .5s;
+}
+#button:hover{
+    cursor: pointer;
+    color:#2e2e2e;
+}
+#button:hover:after{
+    left: -10%;
+    width: 120%;
+}
+.fa-youtube{
+    color: red;
+}
+.flashback:hover{
+    font-size:30px;
+  }
+  .about:hover{
+    font-size:30px;
+  }
+  .contact_us:hover{
+    font-size:30px;
+  }
+  .sponsorships:hover{
+    font-size:30px;
+  }
+.responsive_nav{
+    background-color: #000000cc;
+    padding-bottom: 18px;
+    padding-top: 18px;
+}
+.nav_logo{
+    color:white;
+}
+.CulturalEvent{
+    transition: 0.7s;
+}
+.CulturalEvent:hover{
+    transform: scale(1.1);
+}
+
+.Man_LibEvent{
+    transition: 0.7s;
+}
+.Man_LibEvent:hover{
+    transform: scale(1.1);
+}
+
+.Misc{
+    transition: 0.7s;
+}
+.Misc:hover{
+    transform: scale(1.1);
+}
+
+
+.divine{
+    transition: 0.7s;
+}
+.divine:hover{
+    transform: scale(1.1);
+}
+
+.TechEvent{
+    transition: 0.7s;
+}
+.TechEvent:hover{
+    transform: scale(1.1);
+}
+
+.fa, .fas{
+    color:white;
+}
