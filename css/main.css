@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=pacifico');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
 @import url("https://use.fontawesome.com/releases/v5.7.2/css/all.css");
 @font-face {
     font-family: Gotham_Bold;
@@ -15,19 +17,19 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: linear-gradient(to bottom,rgb(231, 231, 231),#aaa); 
+  background: linear-gradient(to bottom,rgb(231, 231, 231),#aaa);
   border-radius: 5px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888;
-  border-radius: 5px; 
+  border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 
 *{
@@ -40,7 +42,7 @@ html{
 }
 body{
     background-image: url("https://firebasestorage.googleapis.com/v0/b/gates-2k19.appspot.com/o/images%2Fgates_web_background.png?alt=media&token=e33205e0-f10d-4917-9537-3061f5cd4993");
-    background-size: cover;                     
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -224,14 +226,18 @@ h4{
     line-height: 90px;
     color: #333;
     font-size: 40px;
-    font-family:Gotham_Bold;
+    font-family:"GothamBold";
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 5px;
     vertical-align: middle;
     height: 50px;
     padding-left: 80px;
 }
 .navbar_element{
+  font-family:"GothamBold";
     padding-left: 550px;
-    font-family: Gotham_Light;
+    margin-left: 180px;
     text-transform: capitalize;
     font-size: 30px;
     display: flex;
@@ -240,25 +246,48 @@ h4{
     padding-top: 65px;
 }
 .events{
-    font-family: Gotham_Bold;
-    font-size: 40px;
+    font-family: "GothamBold";
+    text-align: center;
+    font-size: 60px;
     color: #333;
-    margin-left: 50px;
+    margin-bottom: 10px;
+}
+.events:hover{
+  color:#1abc9c;
+}
+.ChildContainer{
+  margin: 0;
+  padding: 0;
 }
 .card > .events{
     margin-left:0;
+}
+hr{
+  height: 10px;
+  background-color: #34495e;
+  width: 90%;
+}
+footer hr{
+  height: 3px;
+}
+.event_container{
+  background-color: #95a5a6;
 }
 .events::after{
     display: block;
     content: "";
     height: 3px;
-    width: 80px;
-    background: #333;
+    margin-left: 550px;
+    width: 200px;
+    background: #fff;
 
 }
 .elmt{
     margin-left: 40px;
     cursor: pointer;
+}
+.elmt:hover{
+  color:#1abc9c;
 }
 .elmt::after {
     content: '';
@@ -327,13 +356,13 @@ h4{
     max-width: 12%;
     padding: 0 2%;
   }
-  
+
   .column img {
     margin-top: 8px;
     vertical-align: middle;
   }
-  
-  
+
+
 /*-- Flip image--*/
 .flip-box {
     background-color: transparent;
@@ -344,7 +373,7 @@ h4{
     display: inline-block;
     margin: 5%;
   }
-  
+
   .flip-box-inner {
     position: relative;
     width: 100%;
@@ -354,11 +383,11 @@ h4{
     transform-style: preserve-3d;
     border-radius: 50%;
   }
-  
+
   .flip-box:hover .flip-box-inner {
     transform: rotateY(180deg);
   }
-  
+
   .flip-box-front, .flip-box-back {
     position: absolute;
     width: 100%;
@@ -368,12 +397,12 @@ h4{
     cursor: pointer;
     box-shadow: 0px 5px 10px grey;
   }
-  
+
   .flip-box-front {
     background-color: #bbb;
     color: black;
   }
-  
+
   .flip-box-back {
     background-color: dodgerblue;
     color: white;
@@ -419,7 +448,7 @@ h4{
       transform:scale(1)
       }
   }
-  
+
   .img_tag{
     width: 30%;
     height: 100%;
@@ -435,14 +464,15 @@ h4{
     border-radius: 50%;
     width: 200px;
     height: 200px;
-  }      
+  }
   footer{
-    background-color: black;
+    background-color: #2C3A47;
     color: #ccc;
     width: 100%;
   }
-  
+
 .card{
+  color: red;
     width: 100%;
     min-height: 70%;
     max-height: auto;
@@ -467,13 +497,13 @@ h4{
   height: 0;
   width: 100%;
   transition: 0.3s;
-  background: rgba(240, 240, 240, 0.95);
   z-index: 10;
+  background-color: #182C61;
 }
 .nav_logo{
   display: inline-block;
-  color:rgb(63, 63, 63);
-  font-family:Gotham_Bold;
+  color: #fff;
+  font-family:"GothamBold";
   font-size:30px;
   line-height: 70px;
   vertical-align: middle;
@@ -481,7 +511,7 @@ h4{
 .bar_icon{
   float: right;
   margin-right: 20px;
-  color: rgb(20, 20, 20);
+  color: #fff;
   margin-top: 20px;
   cursor: pointer;
 }
@@ -536,20 +566,22 @@ a:link,a:visited,a:active{
   color: #fff;
 }
 .contact_us{
-  font-family: Gotham_Light;
+  font-family :"GothamBold";
   color: #333;
 }
 .contact_inner{
   margin: 5%;
 }
 .contact_heading{
-  font-family: Gotham_Bold;
+  font-family: "GothamBold";
+  text-align: center;
   text-transform: uppercase;
   font-size: 40px;
 }
 .contact_heading::after{
   content:"";
   display: block;
+  margin-left:550px;
   height: 3px;
   width: 150px;
   background: #333;
@@ -566,9 +598,17 @@ a:link,a:visited,a:active{
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
+.contact_list_1 b{
+  font-family: "GothamBold";
+}
 .contact_list_2{
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.contact_list_2 b{
+  text-transform: uppercase;
+  font-family: "GothamBold";
 }
 b{
   font-family: Gotham_Bold;
@@ -589,7 +629,7 @@ i{
   top: 35%;
   left: 0;
   text-align: center;
-  background: #f43c62;
+  background: #25CCF7;
   color:white;
   overflow-x: hidden;
   padding: 3% 1%;
