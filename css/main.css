@@ -90,7 +90,7 @@ a:hover div i{
     margin-left: 22px;
     margin-right: 22px;
     overflow: hidden;
-    cursor: pointer;
+    cursor: default;
 }
 .Event_img{
     position: relative;
@@ -365,7 +365,7 @@ h4{
     height: 100%;
     backface-visibility: hidden;
     border-radius:50%;
-    cursor: pointer;
+    cursor: default;
     box-shadow: 0px 5px 10px grey;
   }
   
@@ -483,7 +483,7 @@ h4{
   margin-right: 20px;
   color: rgb(20, 20, 20);
   margin-top: 20px;
-  cursor: pointer;
+  cursor: default;
 }
 .right_nav{
   position: fixed;
@@ -526,7 +526,7 @@ a:link,a:visited,a:active{
   line-height: 20px;
   vertical-align: middle;
   color: #ccc;
-  border-radius: 5px;
+  border-radius: 7px;
   transition: 0.3s;
   display: inline-block;
   border: 2px solid #ccc;
