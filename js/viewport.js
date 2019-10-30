@@ -1,5 +1,5 @@
 window.addEventListener("load",()=>{
-    if (screen.width < 1000){
+    if (screen.width < 999){
         document.location = "./mobile_view/index.html";
     }
     else{
