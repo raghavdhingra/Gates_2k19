@@ -39,32 +39,32 @@ const close_it = () => {
 document.getElementById("close").addEventListener("click",close_it);
 
 ///////////////////////////////////////////////
-function on1() {
+const on1 = () => {
   document.getElementById("overlay1").style.display = "block";
 }
 
-function off1() {
+const off1 = () => {
   document.getElementById("overlay1").style.display = "none";
 }
-function on2() {
+const on2 = () => {
   document.getElementById("overlay2").style.display = "block";
 }
 
-function off2() {
+const off2= () => {
   document.getElementById("overlay2").style.display = "none";
 }
-function on3() {
+const on3= () => {
   document.getElementById("overlay3").style.display = "block";
 }
 
-function off3() {
+const off3= () => {
   document.getElementById("overlay3").style.display = "none";
 }
-function on4() {
+const on4= () => {
   document.getElementById("overlay4").style.display = "block";
 }
 
-function off4() {
+const off4= () => {
   document.getElementById("overlay4").style.display = "none";
 }
 
